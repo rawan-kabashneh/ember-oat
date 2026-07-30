@@ -206,6 +206,9 @@
   .h-dvh {
     height: 100dvh;
   }
+  .w-100 {
+    width: calc(var(--spacing) * 100);
+  }
   .flex-col {
     flex-direction: column;
   }
@@ -249,14 +252,62 @@
   .bg-\[\#A93200\] {
     background-color: #A93200;
   }
+  .bg-\[\#FAF0E6\] {
+    background-color: #FAF0E6;
+  }
+  .bg-\[\#\] {
+    background-color: #;
+  }
   .bg-\[url\(\"\.\.\/assets\/imgs\/slider\/sliderim\.png\"\)\] {
     background-image: url("../assets/imgs/slider/sliderim.png");
+  }
+  .bg-\[url\(\"\/assets\/imgs\/sliderim\.png\"\)\] {
+    background-image: url("/assets/imgs/sliderim.png");
   }
   .bg-\[url\(\'\'\)\] {
     background-image: url('');
   }
   .bg-\[url\(\'\.\'\)\] {
     background-image: url('.');
+  }
+  .bg-\[url\(\'\.\.\/assets\/\'\)\] {
+    background-image: url('../assets/');
+  }
+  .bg-\[url\(\'\.\.\/assets\/i\'\)\] {
+    background-image: url('../assets/i');
+  }
+  .bg-\[url\(\'\.\.\/assets\/ima\'\)\] {
+    background-image: url('../assets/ima');
+  }
+  .bg-\[url\(\'\.\.\/assets\/imags\'\)\] {
+    background-image: url('../assets/imags');
+  }
+  .bg-\[url\(\'\.\.\/assets\/imags\/\'\)\] {
+    background-image: url('../assets/imags/');
+  }
+  .bg-\[url\(\'\.\.\/assets\/imags\/header\/\'\)\] {
+    background-image: url('../assets/imags/header/');
+  }
+  .bg-\[url\(\'\.\.\/assets\/imags\/header\/pro\'\)\] {
+    background-image: url('../assets/imags/header/pro');
+  }
+  .bg-\[url\(\'\.\.\/assets\/imags\/header\/profil\.\'\)\] {
+    background-image: url('../assets/imags/header/profil.');
+  }
+  .bg-\[url\(\'\.\.\/assets\/imags\/header\/profil\.jp\'\)\] {
+    background-image: url('../assets/imags/header/profil.jp');
+  }
+  .bg-\[url\(\'\.\.\/assets\/imags\/header\/profil\.jpg\'\)\] {
+    background-image: url('../assets/imags/header/profil.jpg');
+  }
+  .bg-\[url\(\'\.\.\/assets\/imags\/header\/profile\'\)\] {
+    background-image: url('../assets/imags/header/profile');
+  }
+  .bg-\[url\(\'\.\.\/assets\/imags\/sliderim\.\'\)\] {
+    background-image: url('../assets/imags/sliderim.');
+  }
+  .bg-\[url\(\'\.\.\/assets\/imags\/sliderim\.png\'\)\] {
+    background-image: url('../assets/imags/sliderim.png');
   }
   .bg-\[url\(\'\.\.\/assets\/imgs\/slider\/sliderim\.png\'\)\] {
     background-image: url('../assets/imgs/slider/sliderim.png');
@@ -267,6 +318,9 @@
   .bg-\[url\(\'\.\/\'\)\] {
     background-image: url('./');
   }
+  .bg-\[url\(\'\.\/assets\/\'\)\] {
+    background-image: url('./assets/');
+  }
   .bg-\[url\(\'\.\/assets\/imgs\/slider\/sliderim\.png\'\)\] {
     background-image: url('./assets/imgs/slider/sliderim.png');
   }
@@ -276,11 +330,26 @@
   .bg-\[url\(\'\.\/sliderim\.png\'\)\] {
     background-image: url('./sliderim.png');
   }
+  .bg-\[url\(\'\/assets\/\'\)\] {
+    background-image: url('/assets/');
+  }
+  .bg-\[url\(\'\/assets\/imgs\/\/sliderim\.png\'\)\] {
+    background-image: url('/assets/imgs//sliderim.png');
+  }
+  .bg-\[url\(\'\/assets\/imgs\/slider\/sliderim\.png\'\)\] {
+    background-image: url('/assets/imgs/slider/sliderim.png');
+  }
+  .bg-\[url\(\'\/assets\/imgs\/sliderim\.png\'\)\] {
+    background-image: url('/assets/imgs/sliderim.png');
+  }
   .bg-\[url\(\'sliderim\.png\'\)\] {
     background-image: url('sliderim.png');
   }
   .bg-\[url\(\'£\'\)\] {
     background-image: url('£');
+  }
+  .bg-\[url\(\.\.\/assets\/imags\/sliderim\.png\)\] {
+    background-image: url(../assets/imags/sliderim.png);
   }
   .bg-\[url\(\.\.\/assets\/imgs\/slider\/\)\] {
     background-image: url(../assets/imgs/slider/);
@@ -342,8 +411,14 @@
   .bg-\[url\(\/\.\/assets\/imgs\/slider\/sliderim\.png\)\] {
     background-image: url(/./assets/imgs/slider/sliderim.png);
   }
+  .bg-\[url\(\/assets\/imgs\/sliderim\.png\)\] {
+    background-image: url(/assets/imgs/sliderim.png);
+  }
   .bg-\[url\(sliderim\.png\)\] {
     background-image: url(sliderim.png);
+  }
+  .bg-\[url\(؛\)\] {
+    background-image: url(؛);
   }
   .bg-cover {
     background-size: cover;
@@ -403,12 +478,87 @@
       text-underline-offset: 4px;
     }
   }
+  @media (width < 64rem) {
+    .max-lg\:bg-\[url\(\'\/assets\/imgs\/slider\/sliderim\.png\'\)\] {
+      background-image: url('/assets/imgs/slider/sliderim.png');
+    }
+    .max-lg\:bg-cover {
+      background-size: cover;
+    }
+  }
   @media (width < 48rem) {
     .max-md\:hidden {
       display: none;
     }
+    .max-md\:gap-0 {
+      gap: 0px;
+    }
+    .max-md\:gap-2 {
+      gap: calc(var(--spacing) * 2);
+    }
+    .max-md\:gap-3 {
+      gap: calc(var(--spacing) * 3);
+    }
     .max-md\:gap-4 {
       gap: calc(var(--spacing) * 4);
+    }
+    .max-md\:gap-5 {
+      gap: calc(var(--spacing) * 5);
+    }
+    .max-md\:gap-\[10px\] {
+      gap: 10px;
+    }
+    .max-md\:gap-\[20px\] {
+      gap: 20px;
+    }
+    .max-md\:bg-\[url\(\'\/assets\/imgs\/slider\/sl\.png\'\)\] {
+      background-image: url('/assets/imgs/slider/sl.png');
+    }
+    .max-md\:bg-\[url\(\'\/assets\/imgs\/slider\/slider\.png\'\)\] {
+      background-image: url('/assets/imgs/slider/slider.png');
+    }
+    .max-md\:bg-\[url\(\'\/assets\/imgs\/slider\/sliderim\.png\'\)\] {
+      background-image: url('/assets/imgs/slider/sliderim.png');
+    }
+    .max-md\:bg-\[url\(\'\/assets\/imgs\/slider\/sliderp\.png\'\)\] {
+      background-image: url('/assets/imgs/slider/sliderp.png');
+    }
+    .max-md\:bg-\[url\(\'\/assets\/imgs\/slider\/sliderphone\.png\'\)\] {
+      background-image: url('/assets/imgs/slider/sliderphone.png');
+    }
+    .max-md\:bg-cover {
+      background-size: cover;
+    }
+    .max-md\:text-\[20px\] {
+      font-size: 20px;
+    }
+    .max-md\:text-\[30px\] {
+      font-size: 30px;
+    }
+    .max-md\:text-\[\#FFDBD0\] {
+      color: #FFDBD0;
+    }
+    .max-md\:text-\[\#\] {
+      color: #;
+    }
+    .max-md\:text-white {
+      color: var(--color-white);
+    }
+  }
+  @media (width >= 48rem) {
+    .min-md\:bg-\[url\(\'\/assets\/imgs\/slider\/sliderim\.png\'\)\] {
+      background-image: url('/assets/imgs/slider/sliderim.png');
+    }
+    .min-md\:bg-cover {
+      background-size: cover;
+    }
+  }
+  @media (width >= 64rem) {
+    .min-lg\:bg-\[url\(\'\/assets\/imgs\/slider\/sliderim\.png\'\)\] {
+      background-image: url('/assets/imgs/slider/sliderim.png');
+    }
+    .min-lg\:bg-cover {
+      background-size: cover;
     }
   }
 }
