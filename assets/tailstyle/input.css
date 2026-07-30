@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme
+{
+ --bg-color: #FAF0E6;
+ --p-font:"Inter", sans-serif;
+ --p-font-color:#5C4038;
+ --p-h-color:#1F1B15;
+ --p-buttons-color:#A93200;
+
+
+}
+
+
+@layer base
+ {
+    body
+    {
+        background-color: var(--bg-color);
+        font-family:var(--p-font);
+        color:var(--p-font-color);
+    }
+    h1, h2, h3, h4, h5, h6 
+    {
+       color: var(--p-h-color);
+    }
+ }
+ @utility row
+ {
+    @apply flex items-center;
+ }
