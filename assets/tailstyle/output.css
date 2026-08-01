@@ -268,8 +268,14 @@
       max-width: 96rem;
     }
   }
+  .m-\[10px\] {
+    margin: 10px;
+  }
   .m-auto {
     margin: auto;
+  }
+  .mx-\[10px\] {
+    margin-inline: 10px;
   }
   .my-\[64px\] {
     margin-block: 64px;
@@ -446,6 +452,12 @@
   .gap-\[4px\] {
     gap: 4px;
   }
+  .gap-\[8\] {
+    gap: 8;
+  }
+  .gap-\[8px\] {
+    gap: 8px;
+  }
   .gap-\[12px\] {
     gap: 12px;
   }
@@ -577,6 +589,39 @@
   }
   .bg-\[url\(\'\.\/\'\)\] {
     background-image: url('./');
+  }
+  .bg-\[url\(\'\.\/assets\/\'\)\] {
+    background-image: url('./assets/');
+  }
+  .bg-\[url\(\'\.\/assets\/im\'\)\] {
+    background-image: url('./assets/im');
+  }
+  .bg-\[url\(\'\.\/assets\/img\/\'\)\] {
+    background-image: url('./assets/img/');
+  }
+  .bg-\[url\(\'\.\/assets\/imgs\/\'\)\] {
+    background-image: url('./assets/imgs/');
+  }
+  .bg-\[url\(\'\.\/assets\/imgs\/gridslider\/\'\)\] {
+    background-image: url('./assets/imgs/gridslider/');
+  }
+  .bg-\[url\(\'\.\/assets\/imgs\/gridslider\/Banner\'\)\] {
+    background-image: url('./assets/imgs/gridslider/Banner');
+  }
+  .bg-\[url\(\'\.\/assets\/imgs\/gridslider\/Banner\.\'\)\] {
+    background-image: url('./assets/imgs/gridslider/Banner.');
+  }
+  .bg-\[url\(\'\.\/assets\/imgs\/gridslider\/Banner\.png\'\)\] {
+    background-image: url('./assets/imgs/gridslider/Banner.png');
+  }
+  .bg-\[url\(\'\.\/assets\/imgs\/gridslider\/anner\'\)\] {
+    background-image: url('./assets/imgs/gridslider/anner');
+  }
+  .bg-\[url\(\'\.\/assets\/imgs\/gridslider\/banner\'\)\] {
+    background-image: url('./assets/imgs/gridslider/banner');
+  }
+  .bg-\[url\(\'\/assets\/imgs\/gridslider\/Banner\.png\'\)\] {
+    background-image: url('/assets/imgs/gridslider/Banner.png');
   }
   .bg-\[url\(\'\/assets\/imgs\/gridslider\/gridslid\.png\'\)\] {
     background-image: url('/assets/imgs/gridslider/gridslid.png');
