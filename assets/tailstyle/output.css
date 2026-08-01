@@ -230,17 +230,56 @@
   .mx-\[10px\] {
     margin-inline: 10px;
   }
+  .my-\[20px\] {
+    margin-block: 20px;
+  }
   .my-\[64px\] {
     margin-block: 64px;
+  }
+  .mt-\[7px\] {
+    margin-top: 7px;
   }
   .mt-\[8px\] {
     margin-top: 8px;
   }
+  .mt-\[20px\] {
+    margin-top: 20px;
+  }
+  .mt-\[40px\] {
+    margin-top: 40px;
+  }
+  .mt-\[64px\] {
+    margin-top: 64px;
+  }
+  .mt-\[78px\] {
+    margin-top: 78px;
+  }
+  .mt-\[87px\] {
+    margin-top: 87px;
+  }
   .mb-\[12px\] {
     margin-bottom: 12px;
   }
+  .mb-\[20px\] {
+    margin-bottom: 20px;
+  }
+  .mb-\[30px\] {
+    margin-bottom: 30px;
+  }
   .mb-\[32px\] {
     margin-bottom: 32px;
+  }
+  .mb-\[40px\] {
+    margin-bottom: 40px;
+  }
+  .mb-\[70px\] {
+    margin-bottom: 70px;
+  }
+  .mb-\[80px\] {
+    margin-bottom: 80px;
+  }
+  .mb-\[px\] {
+    margin-bottom: px;
   }
   .ml-\[10px\] {
     margin-left: 10px;
@@ -339,6 +378,9 @@
   .gap-\[3px\] {
     gap: 3px;
   }
+  .gap-\[4\] {
+    gap: 4;
+  }
   .gap-\[4px\] {
     gap: 4px;
   }
@@ -372,6 +414,9 @@
   .gap-\[180px\] {
     gap: 180px;
   }
+  .gap-\[494px\] {
+    gap: 494px;
+  }
   .gap-\[720px\] {
     gap: 720px;
   }
@@ -393,6 +438,12 @@
   .rounded-\[9999px\] {
     border-radius: 9999px;
   }
+  .rounded-\[99999px\] {
+    border-radius: 99999px;
+  }
+  .rounded-\[999999px\] {
+    border-radius: 999999px;
+  }
   .rounded-full {
     border-radius: calc(infinity * 1px);
   }
@@ -413,6 +464,9 @@
   }
   .bg-\[\#1F1B15\] {
     background-color: #1F1B15;
+  }
+  .bg-\[\#353029\] {
+    background-color: #353029;
   }
   .bg-\[\#A93200\] {
     background-color: #A93200;
@@ -462,6 +516,9 @@
   .px-\[8px\] {
     padding-inline: 8px;
   }
+  .px-\[12px\] {
+    padding-inline: 12px;
+  }
   .px-\[20px\] {
     padding-inline: 20px;
   }
@@ -486,6 +543,9 @@
   .py-\[8px\] {
     padding-block: 8px;
   }
+  .py-\[12px\] {
+    padding-block: 12px;
+  }
   .py-\[16px\] {
     padding-block: 16px;
   }
@@ -509,6 +569,9 @@
   }
   .text-center {
     text-align: center;
+  }
+  .font-sans {
+    font-family: var(--font-sans);
   }
   .text-\[9px\] {
     font-size: 9px;
@@ -547,6 +610,9 @@
   }
   .text-\[\#FAF0E6\] {
     color: #FAF0E6;
+  }
+  .text-\[\#FFB59E\] {
+    color: #FFB59E;
   }
   .text-white {
     color: var(--color-white);
