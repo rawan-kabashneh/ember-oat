@@ -22,16 +22,16 @@
     
     <div class="lists ">
         <ul class="max-md:hidden row gap-6 capitalize">
-            <li class=" hover:text-[#A93200] hover:underline hover:underline-offset-4 transition:.5s "> <a href="#">home </a></li>
-            <li class=" hover:text-[#A93200]  hover:underline hover:underline-offset-4 transition:.5s"> <a href="#">menu </a></li> 
-            <li class=" hover:text-[#A93200]  hover:underline hover:underline-offset-4 transition:.5s"> <a href="#">favorites </a></li>
-            <li class=" hover:text-[#A93200]  hover:underline hover:underline-offset-4 transition:.5s"> <a href="#">orders </a></li>
+            <li class=" hover:text-[#A93200] hover:underline hover:underline-offset-4 transition-all duration-500 "> <a href="#">home </a></li>
+            <li class=" hover:text-[#A93200]  hover:underline hover:underline-offset-4 transition-all duration-500"> <a href="#">menu </a></li> 
+            <li class=" hover:text-[#A93200]  hover:underline hover:underline-offset-4 transition-all duration-500"> <a href="#">favorites </a></li>
+            <li class=" hover:text-[#A93200]  hover:underline hover:underline-offset-4 transition-all duration-500"> <a href="#">orders </a></li>
         </ul>
     </div>
    
     <div class="icons ">
         <ul class="flex items-center gap-4">
-            <li><a href="#"><img src="./assets/imgs/header/cart.svg"></a></li>
+            <li><a href="#"><img src="./assets/imgs/icons/cart.svg"></a></li>
             <li><a href="#"><img class=" rounded-full" src="./assets/imgs/header/profil.jpg" width="50px" height="50px"></a></li>
         </ul>
     </div>
@@ -40,19 +40,179 @@
 
 <main>
   
-    <div class="slider max-md:gap-2 max-md:bg-cover max-md:bg-[url('/assets/imgs/slider/sliderphone.png')]  min-md:bg-cover min-md:bg-[url('/assets/imgs/slider/sliderim.png')]  flex flex-col items-left gap-5.75 px-[34px] py-[178px]">
+    <section class="slider   max-md:gap-2 max-md:bg-cover max-md:bg-[url('/assets/imgs/slider/sliderphone.png')]  min-md:bg-cover min-md:bg-[url('/assets/imgs/slider/sliderim.png')]  flex flex-col items-left gap-5.75 px-[34px] py-[178px] ">
       
-      
-      <p class="max-md:text-[#FFDBD0]  text-[#A93200] font-semibold">SEASONAL SPECIAL</p>
-      <h1 class="max-md:text-[30px] max-md:text-white font-bold text-[48px]">The Smoked Toffee Oat Latte</h1>
-      <p class="max-md:hidden">Hand-torched toffee bits meets our signature house-roasted espresso and creamy oat milk.</p>
-      <div class="flex gap-4">
-      <button class="bg-[#A93200] text-white py-4.5 px-8 capitalize rounded-[12px]">oreder now</button>
-      <button class="max-md:hidden text-[#A93200] capitalize border border-[#A93200] rounded-[12px] py-[16px] px-[32px]">Explore Menu</button>
+      <p class="max-md:text-[#FFDBD0]  text-[#A93200] font-semibold container m-auto">SEASONAL SPECIAL</p>
+      <h1 class="max-md:text-[30px] max-md:text-white font-bold text-[48px] container m-auto">The Smoked Toffee Oat Latte</h1>
+      <p class="max-md:hidden container m-auto">Hand-torched toffee bits meets our signature house-roasted espresso and creamy oat milk.</p>
+      <div class="flex gap-4 container m-auto">
+        <button class="bg-[#A93200] text-white py-4.5 px-8 capitalize rounded-[12px]">oreder now</button>
+        <button class="max-md:hidden text-[#A93200] capitalize border border-[#A93200] rounded-[12px] py-[16px] px-[32px]">Explore Menu</button>
       </div>
-   
- </div>
 
+ </section>
+
+
+    <section class="location container m-auto flex gap-[720px] py-[16px] max-lg:gap-[30px]">
+        <div class="flex max-sm:gap-[20px] max-sm:items-center max-sm:border-1 max-sm:border-[#E5BEB2] max-sm:p-[16px] max-sm:ml-[10px] max-sm:rounded-[12px] ">
+            <img src="./assets/imgs/icons/location.svg" width="20px" class="max-sm:hidden">
+            <img src="./assets/imgs/icons/mobillocation.svg" width="40px" class="min-sm:hidden">
+
+            <p>Picking up from:<br class="min-sm:hidden"> West Village, 12th St.</br></p>
+            <img src="./assets/imgs/icons/arrow.svg">
+        </div>
+        
+        <div class="flex gap-1 max-sm:hidden">
+        <a href="#" class="hover:text-[#A93200] transition-all duration-500">Change Location</a>
+        <img src="./assets/imgs/icons/arrow.svg" width="10px">
+        </div>
+    </section>
+
+    <section class="categories container m-auto flex max-lg:gap-[12px] max-lg:ml-[10px] min-lg:justify-between py-[31px]">
+        
+        <div class="categorie ">
+            <a href="#"class="flex gap-1 relative">
+                <img src="./assets/imgs/icons/coffeeafterclick.svg" class="hover:opacity-0 max-md:hidden min-lg:block  " >
+                <img src="./assets/imgs/icons/coffee.svg" class="hover:opacity-1 max-md:hidden min-lg:block absolute bottom-[3px]" >
+
+
+                <p class="capitalize  max-sm:text-[13px] max-sm:font-normal">coffee</p>
+            </a>
+        </div>
+ 
+        <div class="categorie">
+            <a href="#" class="flex gap-1 relative">
+                <img src="./assets/imgs/icons/teaafterclick.svg" class="hover:opacity-0 max-md:hidden min-lg:block  " >
+                <img src="./assets/imgs/icons/tea.svg" class="hover:opacity-1 max-md:hidden min-lg:block absolute bottom-[3px]" >
+
+                <p class="capitalize max-sm:text-[13px] max-sm:font-normal">tea</p>
+            </a>
+        </div>
+
+        <div class="categorie">
+            <a href="#" class="flex gap-1 relative">
+                <img src="./assets/imgs/icons/coldbrewafterclick.svg" class="hover:opacity-0 max-md:hidden min-md:block  " >
+                <img src="./assets/imgs/icons/coldbrew.svg" class="hover:opacity-1 max-md:hidden min-lg:block absolute bottom-[2px]" >
+
+                <p class="capitalize max-sm:text-[13px] max-sm:font-normal">cold brew</p>
+            </a>
+        </div>
+        <div class="categorie ">
+            <a href="#" class="flex gap-1 relative">
+                <img src="./assets/imgs/icons/pastriesafterclick.svg" class="hover:opacity-0 max-md:hidden min-lg:block  " >
+                <img src="./assets/imgs/icons/pastries.svg" class="hover:opacity-1 max-md:hidden min-lg:block absolute bottom-[5px]" >
+                <p class="capitalize max-sm:text-[13px] max-sm:font-normal">pastries</p>
+            </a>
+        </div>
+        <div class="categorie">
+            <a href="#" class="flex gap-1 relative">
+                <img src="./assets/imgs/icons/snacksafterclick.svg" class="hover:opacity-0 max-md:hidden min-lg:block  " >
+                <img src="./assets/imgs/icons/snacks.svg" class="hover:opacity-1 max-md:hidden min-lg:block absolute bottom-[3px]" >
+                <p class="capitalize max-sm:text-[13px] max-sm:font-normal">snacks</p>
+            </a>
+        </div>
+    </section>
+   
+    <section class="container m-auto pt-[64px] mb-[32px] max-md:ml-[10px] max-sm:hidden" >
+    <h2 class="text-[32px] font-bold"> Popular this week </h2>
+    <p>What the community is brewing right now.</p>
+    </section>
+
+<section class="popularproduct  items-stretch  flex gap-[24px] container m-auto  max-md:ml-[10px] max-sm:hidden">
+       
+    <div class="flex-1 ">
+            <img src="./assets/imgs/popular/PistachioMatcha.png" width="100%" class="min-lg:rounded-t-[12px]  ">
+            <div class="bg-white flex flex-col gap-1 px-[20px] py-[20px] rounded-b-[12px]">
+                <p class="text-[#A93200] ">BEST SELLER</p>
+                <h3 class="font-bold">Pistachio Matcha</h3>
+                <p>Ceremonial grade matcha with house-made pistachio milk.</p>
+                
+                <div class="flex gap-[148px]">
+                    <p class="text-[#1F1B15] font-bold">$6.50</p>
+                    <img src="./assets/imgs/icons/add.svg" class=" max-md:relative max-md:right-[25px]">
+                </div>
+            </div>
+
+        </div>
+       
+        <div class="flex-1 ">
+            <img src="./assets/imgs/popular/Croissant.png" width="100%" class="rounded-t-[12px]">
+            
+            <div class="bg-white   flex flex-col gap-1 px-[20px] py-[20px] rounded-b-[12px]">
+                <p class="text-[#A93200]">FRESH DAILY</p>
+                <h3 class="font-bold">Classic Sourdough Croissant</h3>
+                <p>48-hour fermented sourdough
+                    for the perfect crunch.</p>
+                
+                <div class="flex gap-[148px]">
+                    <p class="text-[#1F1B15] font-bold">$4.25</p>
+                    <img src="./assets/imgs/icons/add.svg" class="max-md:relative max-md:right-[25px]">
+                </div>
+            </div>
+        </div> 
+       
+        <div class="flex-1">
+            <img src="./assets/imgs/popular/FlatWhite.png" width="100%" class="rounded-t-[12px]">
+            <div class="bg-white   flex flex-col gap-1 px-[20px] py-[20px] rounded-b-[12px]">
+                <p class="text-[#A93200]">STAFF PICK</p>
+                <h3 class="font-bold">Oat Flat White</h3>
+                <p>Double-shot Ethiopia Yirgacheffe with creamy oat foam.</p>
+                
+                <div class="flex gap-[148px]">
+                    <p class="text-[#1F1B15] font-bold">$5.75</p>
+                    <img src="./assets/imgs/icons/add.svg" class="max-md:relative max-md:right-[25px]">
+                </div>
+            </div>
+        </div> 
+        
+        <div class="flex-1 ">
+            <img src="./assets/imgs/popular/MidnightOatBlend.png" width="100%" class="rounded-t-[12px]">
+            <div class="bg-white  flex flex-col gap-1 px-[20px] py-[20px] rounded-b-[12px]">
+                <p class="text-[#A93200]">WHOLE BEAN</p>
+                <h3 class="font-bold">Midnight Oat Blend</h3>
+                <p>Notes of toasted hazelnut,
+                    chocolate, and dark berry.</p>
+                
+                <div class="flex gap-[148px]">
+                    <p class="text-[#1F1B15] font-bold">$19.00</p>
+                    <img src="./assets/imgs/icons/add.svg" class="max-md:relative max-md:right-[25px]">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="container m-auto pt-[20px] mb-[12px] max-md:ml-[10px] flex gap-[100px] items-center min-sm:hidden" >
+        <h2 class="text-[14px] font-semibold"> Popular Today </h2>
+        <p class="text-[#A93200] text-[9px] font-semibold"> view all</pclass>
+        </section>
+
+        <section class="populartodaymobile min-sm:hidden  flex gap-[16px] text-[11px]">
+           
+            <div class="  flex-col flex-1 bg-white gap-[24px] rounded-[8px] p-[12px] ml-[10px]">
+                <img src="./assets/imgs/popular/honeylavenderlatte.png" width="100%">
+                <div class="flex gap-[12px] capitalize">
+                    <h2 class="font-semibold ">honey lavender latte</h2>
+                    <h2 class="text-[#A93200]">$6.50</h2>
+                </div>
+                <p >Floral & Sweet</p>
+            </div>
+
+            <div class="flex-1 flex-col  bg-white gap-[24px] rounded-[8px] p-[12px]">
+                <img src="./assets/imgs/popular/coldbrew.png" width="100%">
+                <div class="flex gap-[12px] capitalize">
+                    <h2 class="font-semibold ">cold brew</h2>
+                    <h2 class="text-[#A93200]">$5.25</h2>
+                </div>
+                <p>12-hr steep</p>
+            </div>
+        </section>
+
+
+
+
+        
 </main>
 
 </body>
