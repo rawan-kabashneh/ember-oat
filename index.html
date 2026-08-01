@@ -211,14 +211,14 @@
         </section>
 
 
-           <section class="container m-auto text-center py-[64px] px-[34px]" >
+           <section class="container m-auto text-center py-[64px] px-[34px] max-sm:text-start max-sm:py-[30px] max-sm:px-[10px] " >
             
             <h2 class="text-[32px] font-semibold capitalize"> new arrivals </h2>
-            <p class="text-[16px] "> Freshly added to our curated selection.</pclass>
+            <p class="text-[16px] max-sm:hidden"> Freshly added to our curated selection.</pclass>
             </section>
 
 
-            <section class="newarrivals container m-auto justify-between flex gap-[24px]">
+            <section class="newarrivals container m-auto justify-between flex gap-[24px] max-sm:hidden">
                 
                 <div class="newarrival flex flex-col p-[px] gap-[4px]">
                     
@@ -256,6 +256,67 @@
 
                 </div>
 
+            </section>
+            
+            <section class="newarrivals ml-[10px] flex flex-col gap-[24px] min-sm:hidden">
+              
+                <div class="flex gap-[16px]">
+                    <img src="./assets/imgs/newarrivals/EthiopiaYirgacheffe.png">
+                    
+                    <div >
+                        <h1 class="font-semibold">Ethiopia Yirgacheffe</h1>
+                        <p>Jasmine, Lemon, Peach</p>
+                       
+                        <div class="flex gap-[85.36px] items-center mt-[8px]">
+                          <h1 class="bg-[#F6ECE2] rounded-[4px] py-[4px] px-[8px] text-[#5C4038] ">SINGLE ORIGIN</h1>
+                          <p class="text-[#A93200]">$18.00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex gap-[16px]">
+                    <img src="./assets/imgs/newarrivals/DoublAlmondCroissant.png" class="rounded-[12px]">
+                    
+                    <div>
+                        <h1 class="font-semibold">Double Almond Croissant</h1>
+                        <p>House-made almond cream</p>
+                       
+                        <div class="flex gap-[85.36px] items-center mt-[8px]">
+                          <h1 class="bg-[#F6ECE2] rounded-[4px] py-[4px] px-[8px] text-[#5C4038">BAKERY</h1>
+                          <p class="text-[#A93200]">$5.50</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </section>
+           
+            <section class="gridsection container m-auto grid grid-flow-col grid-rows-3 gap-[24px] my-[64px] max-sm:hidden">
+                
+                <div class="row-span-3 bg-[url('/assets/imgs/gridslider/gridslid.png')] bg-cover max-lg:col-span-3 rounded-[16px]"  >
+                    <h1 class="text-white text-[32px] font-bold ml-[30px] relative   top-100">The Heritage Collection</h1>
+                    <p class="text-white text-[16px] ml-[30px] relative top-100">Celebrating 10 years of artisanal roasting with three exclusive single-origin beans sourced directly from independent farmers.</p>
+                    <button class="text-[#A93200] bg-white relative top-105 py-[8px] px-[24px] rounded-[9999px] ml-[30px]">Explore Collection</button>
+                </div>
+                
+                <div class="flex flex-col  row-span-3  gap-[24px]">
+                   
+                    <div class="bg-[#D34000] p-[32px] flex flex-1 flex-col gap-[116px] rounded-[16px]  ">
+                        <div class="flex flex-col gap-[16px] ">
+                        <img src="./assets/imgs/gridslider/smoked.svg" width="30px"   >
+                        <h1 class="capitalize">Smoked Maple Cold Brew</h1>
+                        </div>
+                        <p>New release for early risers. Limited availability.</p>
+                    </div>
+
+                    <div class="bg-[#D0E6F1]  p-[32px] rounded-[16px] flex-1 flex flex-col gap-[180px]">
+                       
+                       <div class="flex gap-[157.86px]"> <h1 class="capitalize">Brew Guides</h1>
+                        <img src="./assets/imgs/gridslider/guid.svg">
+                        </div>
+                        <p>Master the art of the perfect pour-over at home.</p>
+                    </div>
+                </div>
             </section>
 
 
