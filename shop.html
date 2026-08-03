@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link href="./assets/tailstyle/output.css" rel="stylesheet">
+    <link href="./assets/tailstyle/input.css" rel="stylesheet">
+  </head>
+
+<body>
+    <header class="sticky top-0 bg-[#FAF0E6] z-10">
+        <div class="max-sm:gap-10  bg-[#FAF0E6] container m-auto  min-sm:justify-between row gap-20 py-4 max-md:mx-[10px]">
+        <div class="logo">
+            <img src="./assets/imgs/header/logo.svg">
+        </div>
+        
+        <div class="lists ">
+            <ul class="max-md:hidden row gap-6 capitalize">
+                <li class=" hover:text-[#A93200] hover:underline hover:underline-offset-4 transition-all duration-500 "> <a href="#">home </a></li>
+                <li class=" hover:text-[#A93200]  hover:underline hover:underline-offset-4 transition-all duration-500"> <a href="#">shop </a></li> 
+                <li class=" hover:text-[#A93200]  hover:underline hover:underline-offset-4 transition-all duration-500"> <a href="#">favorites </a></li>
+                <li class=" hover:text-[#A93200]  hover:underline hover:underline-offset-4 transition-all duration-500"> <a href="#">orders </a></li>
+            </ul>
+        </div>
+       
+        <div class="icons ">
+            <ul class="flex items-center gap-4">
+                <li><a href="#"><img src="./assets/imgs/icons/cart.svg"></a></li>
+                <li class="max-sm:hidden"><a href="#"><img class=" rounded-full" src="./assets/imgs/header/profil.jpg" width="50px" height="50px"></a></li>
+            </ul>
+        </div>
+    </div>
+         
+        <input type="search" placeholder="Search beans, roasts, or kits..." class="border rounded-[16px] bg-[#f6dbc0a1] px-[16px] py-[5px] mx-[10px] focus:outline focus:outline-[#A93200] mb-[10px] min-sm:hidden" >
+    
+    </header>
+
+
+    <main>
+       
+        <section class="Ourshop-banner bg-[#ffffff81] flex gap-[425px] max-sm:hidden min-sm:gap-[100px] justify-between container m-auto rounded-[16px] p-[16px] ">
+            
+            <div class="flex gap-[16px]">
+                <h1 class="text-[#1F1B15]">Our Shop</h1>
+                <h1>128 Products</h1>
+           </div>
+            <div class="flex gap-[16px] min-sm:gap-[6px]">
+                <h1>Sort by:</h1>
+                <a href="#" class="flex gap-1 ">
+                    <h1 class="text-[#A93200] hover:text-red-400">Curated Favorites</h1>
+                    <img src="./assets/imgs/icons/downarrow.svg">
+                </a>
+            </div>
+        </section>
+
+    </main>
+    
+ 
+   
+    
+    <footer class="  bg-[#353029] hidden">
+        <div class="container m-auto flex gap-[24px] p-[64px] justify-between">
+       
+            <div class="capitalize  text-[#EBE1D7] flex flex-col gap-[16px]">
+            <h1 class="text-[#FAF0E6] text-[24px] font-semibold">ember & oat</h1>
+            <p>Handcrafted specialty coffee for
+                the modern ritual. Every bean
+                roasted with intention.</p>
+            <div class="flex gap-[24px]">
+              <a href="#">  <img src="./assets/imgs/icons/worls.svg"></a>
+              <a href="#">  <img src="./assets/imgs/icons/at.svg"></a>
+              <a href="#">  <img src="./assets/imgs/icons/qustions.svg"></a>
+            </div>
+        </div>
+    
+        <div class="capitalize flex flex-col gap-[5px] text-[#EBE1D7] ">
+            <h2 class="text-[#FAF0E6]">shop</h2>
+             
+            <ul class="flex flex-col gap-[5px]">
+                <li><a href="#" class="hover:text-[#ca6d4e]"> menu </a></li>
+                <li><a href="#" class="hover:text-[#ca6d4e]"> subscription </a></li>
+                <li><a href="#" class="hover:text-[#ca6d4e]"> wholesales </a></li>
+    
+            </ul>
+    
+        </div>
+    
+        <div class="capitalize flex flex-col gap-[5px] text-[#EBE1D7]">
+            <h2 class="text-[#FAF0E6]">Explore</h2>
+             
+            <ul class="flex flex-col gap-[5px]">
+                <li><a href="#" class="hover:text-[#ca6d4e]"> our story </a></li>
+                <li><a href="#" class="hover:text-[#ca6d4e]"> brew guides </a></li>
+                <li><a href="#" class="hover:text-[#ca6d4e]"> location </a></li>
+    
+            </ul>
+    
+        </div>
+    
+    
+        <div class="capitalize flex flex-col gap-[5px] text-[#EBE1D7]">
+            <h2 class="text-[#FAF0E6]">support</h2>
+             
+            <ul class="flex flex-col gap-[5px]">
+                <li><a href="#" class="hover:text-[#ca6d4e]"> content </a></li>
+                <li><a href="#" class="hover:text-[#ca6d4e]"> privacy </a></li>
+                <li><a href="#" class="hover:text-[#ca6d4e]"> terms </a></li>
+    
+            </ul>
+    
+        </div>
+        </div>
+    
+    </footer>
+</body>
+</html>
