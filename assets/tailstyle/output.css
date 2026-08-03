@@ -9,8 +9,10 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-red-300: oklch(80.8% 0.114 19.571);
+    --color-red-500: oklch(63.7% 0.237 25.331);
     --color-amber-200: oklch(92.4% 0.12 95.746);
     --color-amber-300: oklch(87.9% 0.169 91.605);
+    --color-fuchsia-300: oklch(83.3% 0.145 321.434);
     --color-white: #fff;
     --spacing: 0.25rem;
     --font-weight-normal: 400;
@@ -366,6 +368,9 @@
   .gap-\[16px\] {
     gap: 16px;
   }
+  .gap-\[22\.5px\] {
+    gap: 22.5px;
+  }
   .gap-\[24px\] {
     gap: 24px;
   }
@@ -398,6 +403,9 @@
   }
   .gap-\[720px\] {
     gap: 720px;
+  }
+  .rounded {
+    border-radius: 0.25rem;
   }
   .rounded-\[4px\] {
     border-radius: 4px;
@@ -459,6 +467,15 @@
   .bg-\[\#FAF0E6\] {
     background-color: #FAF0E6;
   }
+  .bg-\[\#\] {
+    background-color: #;
+  }
+  .bg-\[\#ca8b70f5\] {
+    background-color: #ca8b70f5;
+  }
+  .bg-\[\#f4a787\] {
+    background-color: #f4a787;
+  }
   .bg-white {
     background-color: var(--color-white);
   }
@@ -491,6 +508,9 @@
   }
   .px-\[8px\] {
     padding-inline: 8px;
+  }
+  .px-\[16px\] {
+    padding-inline: 16px;
   }
   .px-\[20px\] {
     padding-inline: 20px;
@@ -575,6 +595,9 @@
   .text-\[\#A93200\] {
     color: #A93200;
   }
+  .text-\[\#EBE1D7\] {
+    color: #EBE1D7;
+  }
   .text-\[\#FAF0E6\] {
     color: #FAF0E6;
   }
@@ -586,6 +609,9 @@
   }
   .capitalize {
     text-transform: capitalize;
+  }
+  .uppercase {
+    text-transform: uppercase;
   }
   .transition {
     transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, content-visibility, overlay, pointer-events;
@@ -602,11 +628,83 @@
     transition-duration: 500ms;
   }
   @media (hover: hover) {
+    .group-hover\:text-fuchsia-300:is(:where(.group):hover *) {
+      color: var(--color-fuchsia-300);
+    }
+    .group-hover\:text-white:is(:where(.group):hover *) {
+      color: var(--color-white);
+    }
+    .hover\:bg-\[\#A93200\]:hover {
+      background-color: #A93200;
+    }
+    .hover\:bg-\[\#D34000\]:hover {
+      background-color: #D34000;
+    }
+    .hover\:bg-\[\#a93300\]:hover {
+      background-color: #a93300;
+    }
+    .hover\:bg-\[\#a93300b6\]:hover {
+      background-color: #a93300b6;
+    }
+    .hover\:bg-\[\#a9330063\]:hover {
+      background-color: #a9330063;
+    }
+    .hover\:bg-\[\#ca7a70f5\]:hover {
+      background-color: #ca7a70f5;
+    }
+    .hover\:bg-\[\#ca8b70f5\]:hover {
+      background-color: #ca8b70f5;
+    }
+    .hover\:bg-\[\#ca8b7072\]:hover {
+      background-color: #ca8b7072;
+    }
+    .hover\:bg-\[\#ca7070f5\]:hover {
+      background-color: #ca7070f5;
+    }
+    .hover\:bg-\[\#d33f0072\]:hover {
+      background-color: #d33f0072;
+    }
+    .hover\:bg-\[\#de7676\]:hover {
+      background-color: #de7676;
+    }
+    .hover\:bg-\[\#de7676f5\]:hover {
+      background-color: #de7676f5;
+    }
+    .hover\:bg-\[\#e77f71\]:hover {
+      background-color: #e77f71;
+    }
+    .hover\:bg-\[\#f4a787\]:hover {
+      background-color: #f4a787;
+    }
+    .hover\:bg-\[\#f07b8f\]:hover {
+      background-color: #f07b8f;
+    }
+    .hover\:bg-\[\#f0897b\]:hover {
+      background-color: #f0897b;
+    }
+    .hover\:bg-\[\#ff64d1\]:hover {
+      background-color: #ff64d1;
+    }
+    .hover\:bg-\[\#ff647e\]:hover {
+      background-color: #ff647e;
+    }
+    .hover\:bg-\[\#ff6464\]:hover {
+      background-color: #ff6464;
+    }
     .hover\:bg-amber-200:hover {
       background-color: var(--color-amber-200);
     }
+    .hover\:bg-red-500:hover {
+      background-color: var(--color-red-500);
+    }
     .hover\:text-\[\#A93200\]:hover {
       color: #A93200;
+    }
+    .hover\:text-fuchsia-300:hover {
+      color: var(--color-fuchsia-300);
+    }
+    .hover\:text-white:hover {
+      color: var(--color-white);
     }
     .hover\:underline:hover {
       text-decoration-line: underline;
@@ -728,6 +826,12 @@
     .max-sm\:items-center {
       align-items: center;
     }
+    .max-sm\:gap-2 {
+      gap: calc(var(--spacing) * 2);
+    }
+    .max-sm\:gap-10 {
+      gap: calc(var(--spacing) * 10);
+    }
     .max-sm\:gap-\[20px\] {
       gap: 20px;
     }
@@ -767,6 +871,9 @@
     }
     .min-sm\:hidden {
       display: none;
+    }
+    .min-sm\:justify-between {
+      justify-content: space-between;
     }
   }
   @media (width >= 48rem) {
