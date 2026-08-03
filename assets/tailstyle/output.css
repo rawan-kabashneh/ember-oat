@@ -336,6 +336,9 @@
   .gap-1 {
     gap: var(--spacing);
   }
+  .gap-2 {
+    gap: calc(var(--spacing) * 2);
+  }
   .gap-4 {
     gap: calc(var(--spacing) * 4);
   }
@@ -377,6 +380,9 @@
   }
   .gap-\[116px\] {
     gap: 116px;
+  }
+  .gap-\[118px\] {
+    gap: 118px;
   }
   .gap-\[148px\] {
     gap: 148px;
@@ -444,6 +450,9 @@
   .bg-\[\#D34000\] {
     background-color: #D34000;
   }
+  .bg-\[\#F0E7DD\] {
+    background-color: #F0E7DD;
+  }
   .bg-\[\#F6ECE2\] {
     background-color: #F6ECE2;
   }
@@ -467,6 +476,9 @@
   }
   .p-\[16px\] {
     padding: 16px;
+  }
+  .p-\[20px\] {
+    padding: 20px;
   }
   .p-\[32px\] {
     padding: 32px;
@@ -639,17 +651,53 @@
     .max-md\:right-\[25px\] {
       right: 25px;
     }
+    .max-md\:m-\[10px\] {
+      margin: 10px;
+    }
+    .max-md\:mx-\[10px\] {
+      margin-inline: 10px;
+    }
     .max-md\:ml-\[10px\] {
       margin-left: 10px;
     }
     .max-md\:hidden {
       display: none;
     }
+    .max-md\:justify-evenly {
+      justify-content: space-evenly;
+    }
+    .max-md\:gap-1 {
+      gap: var(--spacing);
+    }
     .max-md\:gap-2 {
       gap: calc(var(--spacing) * 2);
     }
     .max-md\:gap-4 {
       gap: calc(var(--spacing) * 4);
+    }
+    .max-md\:gap-10 {
+      gap: calc(var(--spacing) * 10);
+    }
+    .max-md\:gap-15 {
+      gap: calc(var(--spacing) * 15);
+    }
+    .max-md\:gap-\[0px\] {
+      gap: 0px;
+    }
+    .max-md\:gap-\[1\] {
+      gap: 1;
+    }
+    .max-md\:gap-\[5px\] {
+      gap: 5px;
+    }
+    .max-md\:gap-\[10px\] {
+      gap: 10px;
+    }
+    .max-md\:gap-\[30px\] {
+      gap: 30px;
+    }
+    .max-md\:gap-\[40px\] {
+      gap: 40px;
     }
     .max-md\:bg-\[url\(\'\/assets\/imgs\/slider\/sliderphone\.png\'\)\] {
       background-image: url('/assets/imgs/slider/sliderphone.png');
@@ -722,8 +770,20 @@
     }
   }
   @media (width >= 48rem) {
+    .min-md\:mx-\[0px\] {
+      margin-inline: 0px;
+    }
+    .min-md\:mx-\[10px\] {
+      margin-inline: 10px;
+    }
+    .min-md\:mx-\[80px\] {
+      margin-inline: 80px;
+    }
     .min-md\:block {
       display: block;
+    }
+    .min-md\:justify-between {
+      justify-content: space-between;
     }
     .min-md\:bg-\[url\(\'\/assets\/imgs\/slider\/sliderim\.png\'\)\] {
       background-image: url('/assets/imgs/slider/sliderim.png');
