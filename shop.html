@@ -13,7 +13,7 @@
   </head>
 
 <body>
-    <header class="sticky top-0 bg-[#FAF0E6] z-10">
+    <header class="sticky top-0 bg-[#FAF0E6] z-10  pb-[4px]">
         <div class="max-sm:gap-10  bg-[#FAF0E6] container m-auto  min-sm:justify-between row gap-20 py-4 max-md:mx-[10px]">
         <div class="logo">
             <img src="./assets/imgs/header/logo.svg">
@@ -36,7 +36,7 @@
         </div>
     </div>
          
-        <input type="search" placeholder="Search beans, roasts, or kits..." class="border rounded-[16px] bg-[#f6dbc0a1] px-[16px] py-[5px] mx-[10px] focus:outline focus:outline-[#A93200] mb-[10px] min-sm:hidden" >
+        <input type="search" placeholder="Search beans, roasts, or kits..." class="border rounded-[16px] bg-[#f6dbc0a1] px-[16px] py-[5px] mx-[10px] focus:outline focus:outline-[#A93200] mb-[10px] min-sm:hidden flex items-center" >
     
     </header>
 
@@ -44,7 +44,7 @@
     <main>
        <section class="flex gap-[32px] container m-auto">
        
-        <section class="left-side  flex flex-col gap-[24px] capitalize">
+        <section class="left-side  flex flex-col gap-[24px] capitalize max-md:hidden">
             <h1>collection</h1>
            
             <div class="flex flex-col gap-[8px] ">
@@ -69,8 +69,41 @@
         </div>
        </section>
      
-     <section class="flex flex-col">
-       <section class=" ourshop-banner  max-sm:hidden bg-[#ffffff81] flex gap-[425px]  min-sm:gap-[100px] justify-between container m-auto rounded-[16px] p-[16px] ">
+     <section class="right-side flex flex-col">
+     
+        <section class="categories container m-auto flex min-md:hidden mx-[10px] my-[32px] gap-4  ">
+        
+            <div class="categorie ">
+                <a href="#"class="flex gap-1 relative">
+                    <p class="capitalize  max-sm:text-[13px] max-sm:font-normal">coffee</p>
+                </a>
+            </div>
+     
+            <div class="categorie">
+                <a href="#" class="flex gap-1 relative">
+                    <p class="capitalize max-sm:text-[13px] max-sm:font-normal">tea</p>
+                </a>
+            </div>
+    
+            <div class="categorie">
+                <a href="#" class="flex gap-1 relative">
+                    <p class="capitalize max-sm:text-[13px] max-sm:font-normal">cold brew</p>
+                </a>
+            </div>
+            <div class="categorie ">
+                <a href="#" class="flex gap-1 relative">
+                    <p class="capitalize max-sm:text-[13px] max-sm:font-normal">pastries</p>
+                </a>
+            </div>
+            <div class="categorie">
+                <a href="#" class="flex gap-1 relative">
+                    
+                    <p class="capitalize max-sm:text-[13px] max-sm:font-normal">snacks</p>
+                </a>
+            </div>
+        </section>
+    
+       <section class=" ourshop-banner  max-sm:hidden bg-[#ffffff81] flex gap-[425px]  min-sm:gap-[100px] justify-between container m-auto rounded-[16px] p-[16px] max-md:hidden">
             
             <div class="flex gap-[16px]">
                 <h1 class="text-[#1F1B15]">Our Shop</h1>
@@ -85,7 +118,7 @@
             </div>
         </section>
        
-        <section class="shopsliders max-sm:hidden flex flex-wrap  my-[32px] gap-[24px] capitalize ">
+        <section class="shopsliders max-sm:hidden flex max-lg:flex-wrap  my-[32px] gap-[24px] capitalize">
             
             <div class="shopslider  bg-[url('/assets/imgs/shop-imgs/coffee.png')] bg-cover bg-center h-50vh rounded-[16px]">
                <div class="relative max-lg:top-[20px] min-lg:top-[150px] p-[32px] flex flex-col gap-[16px] text-white">
@@ -107,16 +140,24 @@
             </div>
         </section>
        
-        <section class="products flex flex-wrap gap-[24px] mb-[32px]">
-            
-            <div class="product rounded-[16px]  hover:drop-shadow-lg hover:drop-shadow-amber-200 transition-all duration-500">
+        <section class="products-header capitalize flex gap-[106px] ml-[10px] mb-[32px] min-sm:hidden">
+            <h1 class="uppercase text-[#5C4038]">32 results found</h1>
+            <div class="flex gap-1 bg-[#CDE3EE] px-[16px] py-[4px] rounded-[16px]">
+                <img src="./assets/imgs/icons/filter.svg" class="w-fit">
+                <h2 class="text-[#A93200]">filter</h2>
+            </div>
+        </section> 
+
+        <section class="products flex flex-wrap  gap-[24px] mb-[32px] max-sm:ml-[18px] ">
+
+            <div class="product rounded-[16px]  hover:drop-shadow-lg hover:drop-shadow-amber-200 transition-all duration-500 max-sm:w-[35%]">
                 <a href="#" class="flex flex-col">
                 <img src="./assets/imgs/shop-imgs/MediumRoast.png" class="rounded-[16px] mb-[16px] ">
                 <h1>MediumRoast</h1>
                 <h1>Golden Oat Roast</h1>
                 <div class="flex gap-[147px] ">
-                    <h1>$22.00</h1>
-                    <div class="flex ">
+                    <h1 class="max-sm:text-[#A93200]">$22.00</h1>
+                    <div class="flex max-sm:hidden">
                         <img src="./assets/imgs/icons/star.svg" width="15px">
                         <p>4.9</p>
                         <h1>(120)</h1>
@@ -124,14 +165,14 @@
                 </div>
                 </a>
               </div>
-              <div class="product rounded-[16px] hover:drop-shadow-lg hover:drop-shadow-amber-200 transition-all duration-500">
+              <div class="product rounded-[16px] hover:drop-shadow-lg hover:drop-shadow-amber-200 transition-all duration-500 max-sm:w-[35%]">
                 <a href="#" class="flex flex-col capitalize ">
-                <img src="./assets/imgs/shop-imgs/DarkRoast.png" class="rounded-[16px] ">
+                <img src="./assets/imgs/shop-imgs/DarkRoast.png" class="rounded-[16px]  mb-[16px]">
                 <h1>DarkRoast</h1>
                 <h1>Midnight Heartht</h1>
-                <div class="flex gap-[147px] ">
-                    <h1>$26.00</h1>
-                    <div class="flex gap-1">
+                <div class="flex gap-[147px]">
+                    <h1 class="max-sm:text-[#A93200]">$26.00</h1>
+                    <div class="flex gap-1 max-sm:hidden">
                         <img src="./assets/imgs/icons/star.svg" width="15px">
                         <p>4.8</p>
                         <h1>(85)</h1>
@@ -139,14 +180,14 @@
                 </div>
                 </a>
               </div>
-              <div class="product hover:drop-shadow-lg hover:drop-shadow-amber-200 transition-all duration-500">
+              <div class="product hover:drop-shadow-lg hover:drop-shadow-amber-200 transition-all duration-500 max-sm:w-[35%]">
                 <a href="#" class="capitalize ">
-                <img src="./assets/imgs/shop-imgs/BrewingGear.png"  class="rounded-[16px]  ">
+                <img src="./assets/imgs/shop-imgs/BrewingGear.png"  class="rounded-[16px] mb-[16px] ">
                 <h1>BrewingGear</h1>
                 <h1>Artisan Brew Kit</h1>
                 <div class="flex gap-[147px] ">
-                    <h1>$45.00</h1>
-                    <div class="flex gap-1">
+                    <h1 class="max-sm:text-[#A93200]">$45.00</h1>
+                    <div class="flex gap-1 max-sm:hidden">
                         <img src="./assets/imgs/icons/star.svg" width="15px">
                         <p>5.0</p>
                         <h1>(42)</h1>

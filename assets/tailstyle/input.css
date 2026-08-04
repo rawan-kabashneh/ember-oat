@@ -38,7 +38,7 @@
 
 @utility categorie
 {
-  @apply  bg-[#F0E7DD] hover:bg-[#A93200] hover:text-white transition-all duration-[9.s] py-[12px] px-[24px] rounded-[99999px] max-sm:py-[6px] max-sm:px-[3px] max-sm:gap-[3px] max-sm:text-center ;
+  @apply  bg-[#F0E7DD] hover:bg-[#A93200] hover:text-white transition-all duration-500 py-[12px] px-[24px] rounded-[99999px] max-sm:py-[6px] max-sm:px-[3px] max-sm:gap-[3px] max-sm:text-center ;
 }
 
 @utility footer-hover-text
