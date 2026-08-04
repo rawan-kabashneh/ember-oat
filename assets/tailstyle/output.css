@@ -405,6 +405,9 @@
   .gap-20 {
     gap: calc(var(--spacing) * 20);
   }
+  .gap-\[1\] {
+    gap: 1;
+  }
   .gap-\[3px\] {
     gap: 3px;
   }
@@ -435,6 +438,9 @@
   .gap-\[32px\] {
     gap: 32px;
   }
+  .gap-\[32pxx\] {
+    gap: 32pxx;
+  }
   .gap-\[85\.36px\] {
     gap: 85.36px;
   }
@@ -455,6 +461,9 @@
   }
   .gap-\[157\.86px\] {
     gap: 157.86px;
+  }
+  .gap-\[169px\] {
+    gap: 169px;
   }
   .gap-\[180px\] {
     gap: 180px;
@@ -508,6 +517,10 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
+  .border-4 {
+    border-style: var(--tw-border-style);
+    border-width: 4px;
+  }
   .border-t-1 {
     border-top-style: var(--tw-border-style);
     border-top-width: 1px;
@@ -519,6 +532,10 @@
   .border-t-4 {
     border-top-style: var(--tw-border-style);
     border-top-width: 4px;
+  }
+  .border-t-8 {
+    border-top-style: var(--tw-border-style);
+    border-top-width: 8px;
   }
   .border-b-2 {
     border-bottom-style: var(--tw-border-style);
@@ -627,6 +644,9 @@
   .px-8 {
     padding-inline: calc(var(--spacing) * 8);
   }
+  .px-\[4px\] {
+    padding-inline: 4px;
+  }
   .px-\[8px\] {
     padding-inline: 8px;
   }
@@ -683,6 +703,9 @@
   }
   .pt-\[32px\] {
     padding-top: 32px;
+  }
+  .pt-\[40px\] {
+    padding-top: 40px;
   }
   .text-center {
     text-align: center;
@@ -782,8 +805,17 @@
     .group-hover\:text-white:is(:where(.group):hover *) {
       color: var(--color-white);
     }
+    .hover\:bg-\[\#A93200\]:hover {
+      background-color: #A93200;
+    }
+    .hover\:bg-\[\#CDE3EE\]:hover {
+      background-color: #CDE3EE;
+    }
     .hover\:bg-\[\#D34000\]:hover {
       background-color: #D34000;
+    }
+    .hover\:bg-\[\#\]:hover {
+      background-color: #;
     }
     .hover\:bg-yellow-50:hover {
       background-color: var(--color-yellow-50);
@@ -846,6 +878,21 @@
     outline-color: var(--color-red-400);
   }
   @media (width < 64rem) {
+    .max-lg\:top-\[20px\] {
+      top: 20px;
+    }
+    .max-lg\:top-\[90px\] {
+      top: 90px;
+    }
+    .max-lg\:top-\[100px\] {
+      top: 100px;
+    }
+    .max-lg\:top-\[120px\] {
+      top: 120px;
+    }
+    .max-lg\:top-\[150px\] {
+      top: 150px;
+    }
     .max-lg\:col-span-3 {
       grid-column: span 3 / span 3;
     }
@@ -981,6 +1028,12 @@
     }
   }
   @media (width >= 64rem) {
+    .min-lg\:top-\[50px\] {
+      top: 50px;
+    }
+    .min-lg\:top-\[150px\] {
+      top: 150px;
+    }
     .min-lg\:block {
       display: block;
     }
