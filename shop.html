@@ -13,9 +13,11 @@
   </head>
 
 <body>
-    <header class="sticky top-0 bg-[#FAF0E6] z-10  pb-[4px]">
-        <div class="max-sm:gap-10  bg-[#FAF0E6] container m-auto  min-sm:justify-between row gap-20 py-4 max-md:mx-[10px]">
-        <div class="logo">
+   
+    <header class="sticky top-0 bg-[#FAF0E6] z-10  pb-[4px] flex flex-col">
+        <div class=" max-sm:gap-10  bg-[#FAF0E6] container m-auto flex min-sm:justify-between row gap-20 py-4 max-md:mx-[10px]">
+       
+            <div class="logo">
             <img src="./assets/imgs/header/logo.svg">
         </div>
         
@@ -33,10 +35,12 @@
                 <li><a href="#"><img src="./assets/imgs/icons/cart.svg"></a></li>
                 <li class="max-sm:hidden"><a href="#"><img class=" rounded-full" src="./assets/imgs/header/profil.jpg" width="50px" height="50px"></a></li>
             </ul>
-        </div>
+        </div> 
+      
+
     </div>
-         
-        <input type="search" placeholder="Search beans, roasts, or kits..." class="border rounded-[16px] bg-[#f6dbc0a1] px-[16px] py-[5px] mx-[10px] focus:outline focus:outline-[#A93200] mb-[10px] min-sm:hidden flex items-center" >
+                 <input type="search" placeholder="Search beans, roasts, or kits..." class="border rounded-[16px] bg-[#f6dbc0a1] px-[16px] py-[5px] m-auto focus:outline focus:outline-[#A93200] mb-[10px] min-sm:hidden flex items-center justify-center text-center w-fit" >
+
     
     </header>
 
@@ -226,7 +230,7 @@
          <section class="discounts capitalize flex flex-col gap-[32px] mb-[32px] max-sm:gap-[80px] max-sm:ml-[10px]">
             
        
-            <div class="discount capitalize flex flex-wrap gap-[24px] ">
+            <div class="discount capitalize flex flex-wrap gap-[34px] ">
           
             
             <div class="flex gap-[24px] min-sm:bg-white min-sm:p-[24px] rounded-[16px]">
@@ -235,11 +239,11 @@
              <div class="flex flex-col gap-[7px]">
              <h2 class="font-bold">DiscoveryTrio</h2>
              <p>Light, Medium, and Dark sampler pack.</p>
-             <div class="flex gap-[16px] max-sm:gap-[120px]">
+             <div class="flex gap-[16px] max-sm:gap-[120px] items-center">
                 <h2 class="text-[#A93200]">$55.00</h2>
                 <h2 class="line-through text-shadow-xl/10 text-gray-300 max-sm:hidden">$66.60</h2>
                 <a href="#" class="text-[#A93200] underline font-semibold hover:text-red-500 transition-all duration-500 max-sm:hidden">add bundle</a>
-                <img src="./assets/imgs/icons/addformobile.svg"> 
+                <img src="./assets/imgs/icons/addformobile.svg" alt="add button" class="min-sm:hidden"> 
             </div>
            </div>   
          </div>
@@ -254,7 +258,7 @@
                <h2 class="text-[#A93200]">$48.00</h2>
                <h2 class="line-through text-shadow-xl/10 text-gray-300 max-sm:hidden">$58.60</h2>
                <a href="#" class="text-[#A93200] underline font-semibold hover:text-red-500 transition-all duration-500 max-sm:hidden">add bundle</a>
-               <img src="./assets/imgs/icons/addformobile.svg">
+               <img src="./assets/imgs/icons/addformobile.svg" alt="add button" class="min-sm:hidden">
             </div>
           </div>
         </div>
@@ -266,13 +270,15 @@
             <h1 class="text-[#5C4038]">load more blends</h1>
           </div>
         
-          <div class=" flex gap-4 mx-[10px] border-1 border-[#90706621] py-[16px] justify-center items-center rounded-[16px] min-sm:hidden">
-            <h1>load more blends</h1>
+          <div class=" m-auto border border-[#90706625] p-[16px] rounded-[16px]">
+          <a href="#" class="  flex gap-2 justify-center items-center ">
+            <h1 class="text-[#5C4038]">load more blends</h1>
             <img src="./assets/imgs/icons/arrowdown.svg" alt="arrow" >
+        </a>
           </div>
         </section>
 
-       <section class="recently-vieweds border-t-1 border-[#E5BEB2] flex flex-col gap-[24px] pt-[32px] mb-[128px]" >
+       <section class="recently-vieweds border-t-1 border-[#E5BEB2] flex flex-col gap-[24px] pt-[32px] mb-[128px] max-sm:ml-[10px]" >
         
         <h1 class="capitalize">recently viewed</h1>
       
@@ -283,7 +289,7 @@
             <a href="#" class="flex flex-col gap-[8px]  hover:drop-shadow-lg hover:drop-shadow-amber-200 transition-all duration-500">
             <img src="./assets/imgs/shop-imgs/PrecisionFilters.png" alt=" Precision Filters image" class="w-fit rounded-[16px]">
             <h1>Precision Filters</h1>
-            <h1 class="text-[#A93200]">$12.00</h1>
+            <h1 class="text-[#A93200] max-sm:hidden">$12.00</h1>
             </a>
         </div>
          
@@ -291,7 +297,7 @@
             <a href="#" class="flex flex-col gap-[8px] hover:drop-shadow-lg hover:drop-shadow-amber-200 transition-all duration-500 ">
             <img src="./assets/imgs/shop-imgs/MatteCeramicMug.png" alt=" Matte Ceramic Mug image" class="w-fit rounded-[16px]">
             <h1>Matte Ceramic Mug</h1>
-            <h1 class="text-[#A93200]">$18.00</h1>
+            <h1 class="text-[#A93200] max-sm:hidden">$18.00</h1>
             </a>
         </div>
 
@@ -299,7 +305,7 @@
             <a href="#" class="flex flex-col gap-[8px] hover:drop-shadow-lg hover:drop-shadow-amber-200 transition-all duration-500">
             <img src="./assets/imgs/shop-imgs/GooseneckKettle.png" alt=" Gooseneck Kettle image" class="w-fit rounded-[16px]">
             <h1>Gooseneck Kettle</h1>
-            <h1 class="text-[#A93200]">$85.00</h1>
+            <h1 class="text-[#A93200] max-sm:hidden">$85.00</h1>
             </a>
         </div>
       </div>
