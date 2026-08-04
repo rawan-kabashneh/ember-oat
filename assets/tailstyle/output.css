@@ -906,6 +906,9 @@
     .max-sm\:m-\[18px\] {
       margin: 18px;
     }
+    .max-sm\:mx-\[10px\] {
+      margin-inline: 10px;
+    }
     .max-sm\:mb-\[16px\] {
       margin-bottom: 16px;
     }
@@ -952,6 +955,33 @@
     .max-sm\:border-\[\#E5BEB2\] {
       border-color: #E5BEB2;
     }
+    .max-sm\:bg-\[url\] {
+      background-color: url;
+    }
+    .max-sm\:bg-\[url\(\'\'\)\] {
+      background-image: url('');
+    }
+    .max-sm\:bg-\[url\(\'\/assets\/imgs\/shop-imgs\/LIMITEDRELEASE\.png\'\)\] {
+      background-image: url('/assets/imgs/shop-imgs/LIMITEDRELEASE.png');
+    }
+    .max-sm\:bg-\[url\(\'\/assets\/imgs\/shop-imgs\/S\.png\'\)\] {
+      background-image: url('/assets/imgs/shop-imgs/S.png');
+    }
+    .max-sm\:bg-\[url\(\'\/assets\/imgs\/shop-imgs\/s\.png\'\)\] {
+      background-image: url('/assets/imgs/shop-imgs/s.png');
+    }
+    .max-sm\:bg-\[url\(\'\/assets\/imgs\/shop-imgs\/seasonal\.png\'\)\] {
+      background-image: url('/assets/imgs/shop-imgs/seasonal.png');
+    }
+    .max-sm\:bg-\[url\(\'\/assets\/imgs\/shop-imgs\/sesonal\.png\'\)\] {
+      background-image: url('/assets/imgs/shop-imgs/sesonal.png');
+    }
+    .max-sm\:bg-cover {
+      background-size: cover;
+    }
+    .max-sm\:bg-center {
+      background-position: center;
+    }
     .max-sm\:p-\[16px\] {
       padding: 16px;
     }
@@ -974,6 +1004,12 @@
     .max-sm\:text-\[\#A93200\] {
       color: #A93200;
     }
+    .max-sm\:text-\[\#FFB59E\] {
+      color: #FFB59E;
+    }
+    .max-sm\:text-white {
+      color: var(--color-white);
+    }
   }
   @media (width >= 40rem) {
     .min-sm\:mb-\[32px\] {
@@ -990,6 +1026,9 @@
     }
     .min-sm\:gap-\[100px\] {
       gap: 100px;
+    }
+    .min-sm\:bg-\[\#F0E7DD\] {
+      background-color: #F0E7DD;
     }
   }
   @media (width >= 48rem) {
