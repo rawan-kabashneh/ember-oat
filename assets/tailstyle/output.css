@@ -10,10 +10,17 @@
       "Courier New", monospace;
     --color-red-400: oklch(70.4% 0.191 22.216);
     --color-red-500: oklch(63.7% 0.237 25.331);
+    --color-red-800: oklch(44.4% 0.177 26.899);
     --color-red-900: oklch(39.6% 0.141 25.723);
+    --color-red-950: oklch(25.8% 0.092 26.042);
     --color-amber-200: oklch(92.4% 0.12 95.746);
     --color-yellow-50: oklch(98.7% 0.026 102.212);
+    --color-green-300: oklch(87.1% 0.15 154.449);
+    --color-green-800: oklch(44.8% 0.119 151.328);
+    --color-green-900: oklch(39.3% 0.095 152.535);
+    --color-green-950: oklch(26.6% 0.065 152.934);
     --color-gray-300: oklch(87.2% 0.01 258.338);
+    --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
     --font-weight-normal: 400;
@@ -261,6 +268,9 @@
   .mt-\[78px\] {
     margin-top: 78px;
   }
+  .mb-\[1\] {
+    margin-bottom: 1;
+  }
   .mb-\[10px\] {
     margin-bottom: 10px;
   }
@@ -409,6 +419,9 @@
       text-align: center;
     }
   }
+  .gap-0 {
+    gap: 0px;
+  }
   .gap-1 {
     gap: var(--spacing);
   }
@@ -424,8 +437,17 @@
   .gap-6 {
     gap: calc(var(--spacing) * 6);
   }
+  .gap-7 {
+    gap: calc(var(--spacing) * 7);
+  }
   .gap-20 {
     gap: calc(var(--spacing) * 20);
+  }
+  .gap-74 {
+    gap: calc(var(--spacing) * 74);
+  }
+  .gap-\[1\] {
+    gap: 1;
   }
   .gap-\[2px\] {
     gap: 2px;
@@ -505,6 +527,9 @@
   .gap-\[180px\] {
     gap: 180px;
   }
+  .gap-\[218px\] {
+    gap: 218px;
+  }
   .gap-\[425px\] {
     gap: 425px;
   }
@@ -514,11 +539,32 @@
   .gap-\[720px\] {
     gap: 720px;
   }
+  .gap-x-30 {
+    column-gap: calc(var(--spacing) * 30);
+  }
+  .gap-x-36 {
+    column-gap: calc(var(--spacing) * 36);
+  }
+  .gap-x-40 {
+    column-gap: calc(var(--spacing) * 40);
+  }
+  .gap-x-60 {
+    column-gap: calc(var(--spacing) * 60);
+  }
+  .gap-x-72 {
+    column-gap: calc(var(--spacing) * 72);
+  }
+  .rounded {
+    border-radius: 0.25rem;
+  }
   .rounded-\[4px\] {
     border-radius: 4px;
   }
   .rounded-\[8px\] {
     border-radius: 8px;
+  }
+  .rounded-\[10px\] {
+    border-radius: 10px;
   }
   .rounded-\[12px\] {
     border-radius: 12px;
@@ -608,20 +654,38 @@
   .bg-\[\#FAF0E6\] {
     background-color: #FAF0E6;
   }
+  .bg-\[\#\] {
+    background-color: #;
+  }
   .bg-\[\#f6dbc0a1\] {
     background-color: #f6dbc0a1;
   }
   .bg-\[\#ffffff81\] {
     background-color: #ffffff81;
   }
+  .bg-green-800 {
+    background-color: var(--color-green-800);
+  }
   .bg-white {
     background-color: var(--color-white);
+  }
+  .bg-\[url\(\'\'\)\] {
+    background-image: url('');
+  }
+  .bg-\[url\(\'\/assets\/imgs\/\'\)\] {
+    background-image: url('/assets/imgs/');
   }
   .bg-\[url\(\'\/assets\/imgs\/gridslider\/Banner\.png\'\)\] {
     background-image: url('/assets/imgs/gridslider/Banner.png');
   }
   .bg-\[url\(\'\/assets\/imgs\/gridslider\/gridslid\.png\'\)\] {
     background-image: url('/assets/imgs/gridslider/gridslid.png');
+  }
+  .bg-\[url\(\'\/assets\/imgs\/shop-imgs\/MorningRitualKit\.jpg\'\)\] {
+    background-image: url('/assets/imgs/shop-imgs/MorningRitualKit.jpg');
+  }
+  .bg-\[url\(\'\/assets\/imgs\/shop-imgs\/TheMorningRitualKit\.jpg\'\)\] {
+    background-image: url('/assets/imgs/shop-imgs/TheMorningRitualKit.jpg');
   }
   .bg-\[url\(\'\/assets\/imgs\/shop-imgs\/coffee\.png\'\)\] {
     background-image: url('/assets/imgs/shop-imgs/coffee.png');
@@ -632,11 +696,20 @@
   .bg-center {
     background-position: center;
   }
+  .p-\[1px\] {
+    padding: 1px;
+  }
   .p-\[4px\] {
     padding: 4px;
   }
   .p-\[6px\] {
     padding: 6px;
+  }
+  .p-\[8\] {
+    padding: 8;
+  }
+  .p-\[8px\] {
+    padding: 8px;
   }
   .p-\[12px\] {
     padding: 12px;
@@ -646,6 +719,9 @@
   }
   .p-\[16px\] {
     padding: 16px;
+  }
+  .p-\[19px\] {
+    padding: 19px;
   }
   .p-\[20px\] {
     padding: 20px;
@@ -664,6 +740,9 @@
   }
   .px-8 {
     padding-inline: calc(var(--spacing) * 8);
+  }
+  .px-\[4px\] {
+    padding-inline: 4px;
   }
   .px-\[6px\] {
     padding-inline: 6px;
@@ -793,8 +872,32 @@
   .text-\[\#\] {
     color: #;
   }
+  .text-\[-\[\#A93200\]\] {
+    color: -[#A93200];
+  }
+  .text-black {
+    color: var(--color-black);
+  }
   .text-gray-300 {
     color: var(--color-gray-300);
+  }
+  .text-green-300 {
+    color: var(--color-green-300);
+  }
+  .text-green-900 {
+    color: var(--color-green-900);
+  }
+  .text-green-950 {
+    color: var(--color-green-950);
+  }
+  .text-red-800 {
+    color: var(--color-red-800);
+  }
+  .text-red-900 {
+    color: var(--color-red-900);
+  }
+  .text-red-950 {
+    color: var(--color-red-950);
   }
   .text-white {
     color: var(--color-white);
