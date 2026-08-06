@@ -19,10 +19,13 @@
         background-color: var(--bg-color);
         font-family:var(--p-font);
         color:var(--p-font-color);
+ 
+        
     }
     h1, h2, h3, h4, h5, h6 
     {
        color: var(--p-h-color);
+
     }
     h1
     {
@@ -38,9 +41,16 @@
 
 @utility categorie
 {
-  @apply  bg-[#F0E7DD] hover:bg-[#A93200] hover:text-white transition-all duration-500 py-[12px] px-[24px] rounded-[99999px] max-sm:py-[6px] max-sm:px-[3px] max-sm:gap-[3px] max-sm:text-center ;
+  @apply  bg-[#F0E7DD] hover:bg-[#CDE3EE] hover:outline hover:outline-[#A93200] transition-all duration-500 py-[12px] px-[24px] rounded-[99999px] max-sm:py-[6px] max-sm:px-[3px] max-sm:gap-[3px] max-sm:text-center ;
 }
-
+@utility popularproduct
+{
+  @apply bg-white hover:bg-[#CDE3EE] transition-all duration-500 flex flex-col gap-1 px-[20px] py-[20px] rounded-b-[12px];
+}
+@utility recommend
+{
+  @apply hover:bg-[#CDE3EE] hover:outline hover:outline-[#A93200] transition-all duration-500 rounded-[16px] hover:p-[16px];
+}
 @utility footer-hover-text
 {
   @apply   group-hover:text-red-500 transition-all duration-[5.s] ;
@@ -49,4 +59,30 @@
 @utility hover-text
 {
   @apply   group-hover:text-white transition-all duration-[5.s] ;
+}
+
+
+@utility imgstyle
+{
+  @apply rounded-[12px] hover:outline hover:outline-2 hover:outline-[#A93200] transition-all duration-500 overflow-scroll ;
+}
+
+@utility size-choosen
+{
+ @apply flex flex-col gap-[4px] items-center border border-[#A93200] bg-[#ffdbd00b] rounded-[12px] px-[34px] py-[16px] max-sm:p-[8px] hover:bg-[#CDE3EE] hover:outline hover:outline-[#A93200] transition-all duration-500 ;
+}
+
+@utility milk-choosen
+{
+  @apply bg-[#EBE1D7] hover:bg-[#CDE3EE] hover:outline hover:outline-[#A93200] px-[24px] py-[8px] max-sm:p-[8px] transition-all duration-500 rounded-[9999px] text-center ;
+}
+
+@utility caffeine
+{
+  @apply bg-[#F6ECE2] border border-[#F6ECE2] rounded-[16px] p-[16px]  hover:bg-[#CDE3EE] hover:outline hover:outline-[#A93200] transition-all duration-500;
+}
+
+@utility mtopping
+{
+  @apply bg-[#F6ECE2] p-[16px] rounded-[16px] accent-[#A93200] ;
 }
