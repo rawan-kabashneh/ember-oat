@@ -285,6 +285,9 @@
   .mb-\[74px\] {
     margin-bottom: 74px;
   }
+  .mb-\[80px\] {
+    margin-bottom: 80px;
+  }
   .mb-\[128px\] {
     margin-bottom: 128px;
   }
@@ -760,6 +763,9 @@
   }
   .bg-\[\#FCF2E8\] {
     background-color: #FCF2E8;
+  }
+  .bg-\[\#cde3ee\] {
+    background-color: #cde3ee;
   }
   .bg-\[\#f6dbc0a1\] {
     background-color: #f6dbc0a1;
