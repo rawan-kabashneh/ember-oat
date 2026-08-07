@@ -743,6 +743,9 @@
       }
     }
   }
+  .rounded {
+    border-radius: 0.25rem;
+  }
   .rounded-\[4px\] {
     border-radius: 4px;
   }
@@ -873,6 +876,15 @@
   }
   .bg-\[\#\] {
     background-color: #;
+  }
+  .bg-\[\#cde3ee4e\] {
+    background-color: #cde3ee4e;
+  }
+  .bg-\[\#cde3ee13\] {
+    background-color: #cde3ee13;
+  }
+  .bg-\[\#cde3ee37\] {
+    background-color: #cde3ee37;
   }
   .bg-\[\#cde3ee\] {
     background-color: #cde3ee;
