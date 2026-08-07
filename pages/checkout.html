@@ -118,7 +118,55 @@
                
               <h1>2 items</h1>
                </div>
-      
+               <div class="store-time flex max-sm:flex-col gap-[24px] justify-between">
+            
+                <div class="flex gap-[25px] bg-white rounded-[12px] p-[16px] justify-between min-sm:hidden">
+                   <div class="flex flex-col gap-2">
+                    <h1>order mode</h1>
+                    <p>quick in-store pickup</p>
+                   </div>
+                   <img src="../assets/imgs/icons/mode.svg" alt="mode icon" class="w-[60px]">
+                </div>
+    
+                <div class="row gap-[20px]  max-sm:bg-white p-[16px]  rounded-[12px]  justify-between min-sm:hidden">
+                    <a href="#" class="flex max-sm:gap-[20px] hover:text-red-500 transition-all duration-500">
+                    <img src="../assets//imgs/icons/location.svg" width="20px" class="max-sm:hidden">
+                    <img src="../assets//imgs/icons/mobillocation.svg" width="40px" class="min-sm:hidden">
+        
+                    <p>Picking up from:<br class="min-sm:hidden"> West Village, 12th St.</br></p>
+                    
+                </a>
+                <a href="#" class="text-[#A93200] hover:text-red-300">change</a>
+                </div>
+               
+                <div class="store-loc bg-white p-[24px] w-full flex flex-col gap-[8px] rounded-[12px]  max-sm:hidden">
+                
+                    <lable for="location">select store</lable>
+                    <select name="location" id="location"  class="bg-[#CDE3EE] rounded-[8px] p-[16px] hover:outline hover:outline-[#A93200] transition-all duration-500" >
+                        <option name="downtown">down town</option>
+                        <option name="jubiha">jubiha</option>
+                        <option name="khalda">khalda</option>
+                        <option name="aluaibdih">aluaibdih</option>
+                    </select>
+                    <h2>Estimated wait: 8-12 mins</h2>
+    
+                 </div>
+    
+    
+                 <div class="pickup-times  bg-white p-[24px] rounded-[12px]  ">
+                    <h1 >pickup time</h1>
+                   
+                    <div class="time  row gap-[8px] justify-between">
+    
+                        <h2 class="pickup-time">asap</h2>
+                        <h2 class="pickup-time">8:45</h2>
+                        <h2 class="pickup-time">9:00</h2>
+     
+                    </div>
+                 </div>
+              
+              </div>
+               
     
          </div>
       </div>
