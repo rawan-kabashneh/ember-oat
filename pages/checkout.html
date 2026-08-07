@@ -39,10 +39,10 @@
 </header>
 
 <main>
-    <section class="checkouts capitalize container m-auto ">
+    <section class="checkouts capitalize container m-auto max-sm:mx-[10px]">
         
         
-        <div class="checkout flex  gap-[32px] max-sm:flex-col">
+        <div class="checkout flex  gap-[32px] flex-wrap justify-between">
        
             
 
@@ -120,7 +120,7 @@
                 <h1>order mode</h1>
                 <p>quick in-store pickup</p>
                </div>
-               <img src="../assets/imgs/icons/mode.svg" alt="mode icon">
+               <img src="../assets/imgs/icons/mode.svg" alt="mode icon" class="w-[60px]">
             </div>
 
             <div class="row gap-[20px]  max-sm:bg-white p-[16px]  rounded-[12px]  justify-between min-sm:hidden">
@@ -171,7 +171,7 @@
 
           <div class="right-checkout capitalize flex flex-col gap-[32px]">
 
-            <div class="payments flex flex-col gap-[16px] bg-white p-[16px] rounded-[12px]">
+            <div class="payments flex flex-col gap-[16px] bg-white p-[16px] rounded-[12px] ">
                
                 <h1 >payment method</h1>
                
@@ -216,6 +216,31 @@
                 <img src="../assets/imgs/icons/promo.svg" alt="promo icon">
                 <input type="text" placeholder="promo code" class="bg-[#CDE3EE] max-sm:bg-white p-[16px] rounded-[8px] hoverstyle accent-[#A93200]">
                 <button class="bg-[#CDE3EE] max-sm:bg-white p-[16px] rounded-[8px]">apply</button>
+            </div>
+
+            <div class="total flex flex-col gap-[16px] p-[24px] rounded-[12px] text-[#5C4038] bg-[#5c40380c]">
+                
+                <div class="right-list flex justify-between">
+                  <ul>
+                    <li>subtotal</li>
+                    <li>tax(local)</li>
+                    <li>service free</li>
+                    
+                   </ul>
+                  
+                   <ul>
+                    <li>$11.25</li>
+                    <li>$0.92</li>
+                    <li>$0.50</li>
+                   </ul>
+                </div>
+                <ul class="flex justify-between font-bold text-[23px]">
+                    <li >total</li>
+                    <li>$12.67</li>
+                </ul>
+                <button class="text-white bg-[#A93200] rounded-[12px] py-[32px]">place order</button>
+                 <p class="text-[12px] text-center px-[12px] max-sm:hidden">By placing your order, you agree to our Terms of Brew.</p>
+
             </div>
 
 
