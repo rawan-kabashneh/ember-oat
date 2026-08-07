@@ -291,6 +291,9 @@
   .mb-\[128px\] {
     margin-bottom: 128px;
   }
+  .mb-\[132px\] {
+    margin-bottom: 132px;
+  }
   .ml-\[10px\] {
     margin-left: 10px;
   }
@@ -1083,6 +1086,9 @@
     }
     .max-lg\:ml-\[10px\] {
       margin-left: 10px;
+    }
+    .max-lg\:flex {
+      display: flex;
     }
     .max-lg\:w-\[50\%\] {
       width: 50%;
