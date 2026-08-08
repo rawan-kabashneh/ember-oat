@@ -38,72 +38,90 @@
         
         <main>
 
-            <section class="container m-auto capitalize flex gap-[24px]">
+            <section class="container m-auto capitalize flex gap-[24px] max-lg:flex-wrap max-sm:mx-[10px]">
 
-                <div class="left-side-tracking  flex flex-col gap-[24px]">
+                <div class="left-side-tracking  flex flex-col gap-[24px] ">
                
-                    <div class="order-traking row justify-between bg-white  p-[32px] rounded-[16px] ">
+                    <div class="order-traking row justify-between min-sm:bg-white  p-[32px] rounded-[16px]  ">
                   
-                    <div class="flex flex-col gap-[4px]">
+                    <div class="flex flex-col gap-[4px] max-sm:hidden">
                         <h1 class="uppercase text-[#A93200]">order tracking</h1>
                         <h1 class="font-bold text-[26px]">#e0-884291</h1>
                         <h2>placed today at 8:42 AM . 3 items</h2>
                           
                     </div>
                    <div>
-                    <h1 class="row bg-[#CDE3EE] text-[#51666F] rounded-[9999px]   p-[16px] "> in progress</h1>
+                    <h1 class="row bg-[#CDE3EE] text-[#51666F] rounded-[9999px] max-sm:hidden  p-[16px] "> in progress</h1>
                    </div>
+                  
+                   <div class="min-sm:hidden">
+                   <h1 class="uppercase text-[#A93200]">order #e0-884291</h1>
+                   <h1 class="text-[20px] font-bold">Your artisanal brew is on its way.</h1>
+                   <p class="text-[10px]"">Scheduled for pickup at the Broadway Roastery.</p>
                
-                   
-                    </div>
+                   </div>
+                  
+                   </div>
 
                     <div class="tracking row  justify-between p-[32px] rounded-[16px] bg-white">
                             <div >
-                                <img src="../assets/imgs/icons/confirmed.svg" alt="confirmed order">
-                                <h1>confirmed</h1>
+                                <img src="../assets/imgs/icons/confirmed.svg" alt="confirmed order" class="max-sm:w-[20px] ">
+                                <h1 class="text-[10px] ">confirmed</h1>
                             </div>
                             
                             <div>
-                                <img src="../assets/imgs/icons/brewing.svg" alt="brewing order"> 
-                                <h1>brewing</h>
+                                <img src="../assets/imgs/icons/brewing.svg" alt="brewing order" class="max-sm:w-[20px]"> 
+                                <h1 class="text-[10px]">brewing</h>
                             </div>
                             
                             <div >
-                                <img src="../assets/imgs/icons/onway.jpg" alt="the order on way">
-                                 <h1>on the way</h1>
+                                <img src="../assets/imgs/icons/onway.jpg" alt="the order on way" class="max-sm:w-[20px]">
+                                 <h1 class="text-[10px]">on the way</h1>
                             </div>
                          
                             <div>
-                                <img src="../assets/imgs/icons/deliverd.svg" alt="the order is deliverd">
-                                <h1>deliverd</hq>
+                                <img src="../assets/imgs/icons/deliverd.svg" alt="the order is deliverd" class="max-sm:w-[20px]">
+                                <h1 class="text-[10px]">deliverd</h1>
                             </div>
                         
 
                     </div>
 
                     <img src="../assets/imgs/checkoutimg/Map.png" alt="live map">
+                  
+                    <div class="tarrival bg-[#D34000] p-[32px] rounded-[16px] row flex-col  min-sm:hidden">
+                        <h1 class=" text-white">estimeted arrival</h1>
+                        <h1 class="font-bold text-white text-[32px]">08:44</h1>
+                        <li class=" text-white border p-[7px] rounded-[16px]">Barista is texturing your oat milk</li>
+                  
+                    </div>
 
-                    <div class="bg-white p-[24px] flex flex-col gap-[24px] rounded-[16px] p-[21px]  ">
-                        <h1>order summary</h1>
+                    <div class="order-summary min-sm:bg-white p-[24px] flex flex-col gap-[24px] rounded-[16px] p-[21px]  ">
+                        <h1 class="font-bold">order summary</h1>
                        
-                        <div class="flex justify-between bg-[#FCF2E8] p-[16px] rounded-[12px] ">
+                        <div class="flex justify-between bg-[#FCF2E8] min-sm:p-[16px] rounded-[12px] ">
                            
                             <div class="flex gap-2">
                             <img src="../assets/imgs/checkoutimg/latte.png" alt="Croissant" >
                             <div>
                             <h1>oat milk lavender latte</h1>
-                            <p>large . extra hot</p>
+                            <ul>
+                            <li>large </li>
+                            <li>extra hot</li> 
+                          </ul>
                            </div>
                         </div>
                            <h1>$6.50</h1>
                         </div>
 
-                        <div class="flex  justify-between bg-[#FCF2E8] p-[16px] rounded-[12px] ">
+                        <div class="flex  justify-between bg-[#FCF2E8] min-sm:p-[16px] rounded-[12px] ">
                             <div class="flex gap-2">
                             <img src="../assets/imgs/checkoutimg/crossoin.png" alt="Croissant" >
                             <div class="flex flex-col">
                             <h1>almond croissant</h1>
-                            <p>warm up</p>
+                            <ul>
+                            <li>warm up</li>
+                        </ul>
                            </div>
                         </div>
                            <h1>$4.75</h1>
@@ -130,7 +148,7 @@
 
                <div class="rightside flex flex-col gap-[24px]">
                    
-                   <div class="tarrival bg-[#D34000] p-[32px] rounded-[16px] row flex-col">
+                   <div class="tarrival bg-[#D34000] p-[32px] rounded-[16px] row flex-col  max-sm:hidden">
                      <h1 class=" text-white">estimeted arrival</h1>
                      <h1 class="font-bold text-white text-[32px]">08:44</h1>
                      <h1 class=" text-white">Minutes until your coffee ritual begins</h1>
@@ -159,6 +177,38 @@
                         <p>"Crafting your Lavender Latte with freshly roasted Ember beans. Enjoy the notes of honey and florals!"</p>
                          <button class="bg-[#CDE3EE] py-[16px] rounded-[16px] text-[#51666F]">say thanks with a tip</button>
                     </div>
+
+                    <div class="rate bg-white p-[32px] rounded-[16px] row flex-col gap-3 ">
+                        <h1>rate your experience</h1>
+                      
+                        <div class="stars flex gap-1">
+                          
+                            <img src="../assets/imgs/icons/unfillstar.svg" alt="unfill star">
+                            <img src="../assets/imgs/icons/unfillstar.svg" alt="unfill star">
+                            <img src="../assets/imgs/icons/unfillstar.svg" alt="unfill star">
+                            <img src="../assets/imgs/icons/unfillstar.svg" alt="unfill star">
+
+                        </div>
+                        <input type="text" placeholder="Any thougthts on your brew ?" class="p-[24px]  rounded-[12px] bg-[#FCF2E8] ">
+                    </div>
+
+                    <div class="helpneed flex  gap-3 bg-[#FFDBCB] p-[32px] rounded-[16px]" >
+                        
+                        <img src="../assets/imgs/icons/question.svg" alt="question icon" width="50px" >
+
+                      <div class="flex flex-col  gap-[10px] "> 
+                         <h1 class="text-[#2F1406]">Need help with this order? </h1>
+                        <h1 class="text-[#2F1406]">Our concierge is here to ensure your morningstays perfect.</h1>
+                         <a href="#" class="text-[#A93200] underline">Chat with Concierge</a>
+                    </div>
+
+                    </div>
+                    <div class="button flex flex-col gap-[16px]">
+                        <button class="text-white bg-[#A93200] py-[24px] rounded-[16px]">view receipt</button>
+                        <button class="border border-[#E5BEB2] py-[24px] rounded-[16px] ">re-order for tomorrow</button>
+
+                    </div>
+
                  </div>
             </section>
 
