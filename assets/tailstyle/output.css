@@ -1517,6 +1517,9 @@
     .max-sm\:border-\[\#E5BEB2\] {
       border-color: #E5BEB2;
     }
+    .max-sm\:bg-\[\#A93200\] {
+      background-color: #A93200;
+    }
     .max-sm\:bg-white {
       background-color: var(--color-white);
     }
