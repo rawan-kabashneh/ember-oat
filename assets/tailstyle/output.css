@@ -197,6 +197,9 @@
   .top-0 {
     top: 0px;
   }
+  .top-50 {
+    top: calc(var(--spacing) * 50);
+  }
   .top-100 {
     top: calc(var(--spacing) * 100);
   }
@@ -406,6 +409,9 @@
   }
   .hidden {
     display: none;
+  }
+  .h-dvh {
+    height: 100dvh;
   }
   .w-\[20px\] {
     width: 20px;
@@ -809,6 +815,9 @@
     border-top-style: var(--tw-border-style);
     border-top-width: 8px;
   }
+  .border-\[\#5C4038\] {
+    border-color: #5C4038;
+  }
   .border-\[\#90706625\] {
     border-color: #90706625;
   }
@@ -823,6 +832,9 @@
   }
   .border-\[\#EBE1D7\] {
     border-color: #EBE1D7;
+  }
+  .border-\[\#e5beb22b\] {
+    border-color: #e5beb22b;
   }
   .border-\[\#ebe1d722\] {
     border-color: #ebe1d722;
@@ -916,8 +928,26 @@
   .bg-\[\#ffffff81\] {
     background-color: #ffffff81;
   }
+  .bg-\[url\.\(\'\.\.\/assets\/imgs\/signup\/background\.png\'\)\] {
+    background-color: url.('../assets/imgs/signup/background.png');
+  }
+  .bg-\[url\.\(\'\.\/assets\/imgs\/signup\/background\.png\'\)\] {
+    background-color: url.('./assets/imgs/signup/background.png');
+  }
+  .bg-\[url\.\(\)\.\/assets\/imgs\/signup\/background\.png\)\] {
+    background-color: url.()./assets/imgs/signup/;
+  }
+  .bg-\[url\.\(\.\/assets\/imgs\/signup\/background\.png\)\] {
+    background-color: url.(./assets/imgs/signup/background.png);
+  }
+  .bg-\[url\] {
+    background-color: url;
+  }
   .bg-white {
     background-color: var(--color-white);
+  }
+  .bg-\[url\(\'\.\.\/assets\/imgs\/signup\/background\.png\'\)\] {
+    background-image: url('../assets/imgs/signup/background.png');
   }
   .bg-\[url\(\'\/assets\/imgs\/favoritesimg\/background\.png\'\)\] {
     background-image: url('/assets/imgs/favoritesimg/background.png');
@@ -933,6 +963,18 @@
   }
   .bg-\[url\(\'\/assets\/imgs\/shop-imgs\/coffee\.png\'\)\] {
     background-image: url('/assets/imgs/shop-imgs/coffee.png');
+  }
+  .bg-\[url\(\'\/assets\/imgs\/signup\/background\.png\'\)\] {
+    background-image: url('/assets/imgs/signup/background.png');
+  }
+  .bg-\[url\(\)\] {
+    background-image: url();
+  }
+  .bg-\[url\(\.\.\/a\)\] {
+    background-image: url(../a);
+  }
+  .bg-\[url\(\.\.\/assets\)\] {
+    background-image: url(../assets);
   }
   .bg-cover {
     background-size: cover;
