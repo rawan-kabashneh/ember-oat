@@ -31,10 +31,10 @@
         </div>
         </header>
 <main>
-     <section class="container m-auto">
-         <section class="flex flex-col gap-[24px]">
+     <section class="container m-auto flex gap-[24px] max-lg:flex-wrap">
+         <section class="right flex flex-col gap-[24px]">
         
-           <section class="right bg-[url('/assets/imgs/signup/background.png')] bg-cover bg-center  capitalize h-dvh rounded-[16px]">
+           <section class=" bg-[url('/assets/imgs/signup/background.png')] bg-cover bg-center  capitalize h-dvh rounded-[16px]">
            <div class="flex flex-col  gap-[16px]  p-[32px] relative top-100">
             <h1 class="font-bold text-white text-[32px]">The Oat Circle Benefits</h1>
            
@@ -79,9 +79,69 @@
 
          </section>
 
-         <section>
+         <section class="left">
+            
+            <div class="flex flex-col gap-2">
+              <h1 class="text-[32px] font-bold text-[#A93200]">Begin Your Ritual</h1>
+               <p>Join a community dedicated to the art of the perfect pour and the warmth of handcrafted coffee.</p>
+          
+            </div >
 
-        </section>
+           <div class="inputs flex flex-col gap-[16px] bg-white p-[32px] rounded-[12px]">
+          
+            <div class="name flex justify-between">
+            
+                <div class="flex flex-col">
+            <label>first name</label>
+            <input type="text" name="first name" placeholder="eillas" class="inputstyle">
+          </div>
+
+          <div class="flex flex-col">
+            <label>last name</label>
+            <input type="text" name="last name" placeholder="oatley" class="inputstyle">
+          </div>
+         
+        </div>
+            
+        <div class="flex flex-col">
+            <label>email</label>
+            <input type="email" name="email" placeholder="elias@morningbrew.com" class="inputstyle">
+          </div>
+
+          <div class="flex flex-col">
+            <label>phone number(optinal)</label>
+            <div class="flex">
+              <h1 class="bg-[#F0E7DD] border border-[#E5BEB2] rounded-l-[16px] p-[16px] w-fit">+1</h1>
+              <input type="number" name="phone" placeholder="(555) 000-0000" class="inputstyle rounded-l-[0px]">
+           </div>
+         </div>
+       
+         <div class="flex flex-col">
+            <label>create password</label>
+            <input type="password" name="password" placeholder="**********" class="inputstyle">
+           <div class="mt-[23px]">
+            <h1 class="border-b-2 border-b-[#BA1A1A] ">Password Strength</h1>
+            <p class="text-[12px]">USE 8+ CHARACTERS WITH SYMBOLS & NUMBERS</p>
+          </div>
+        </div>
+
+        <div>
+            <input type="checkbox" name="policy">
+            <label>
+                I agree to the Terms of Service and Privacy Policy. I also consent to receive updates about new roasts and brew sessions.
+            </label>
+        </div>
+       
+
+            <button class="buttonsyletwo">create your account ></button>
+       
+           <div class="row justify-center gap-1 ">
+            <p>Already have an Ember & Oat account?</p>
+            <a href="./login.html" class="text-[#A93200]"> Log In Here</a>
+           </div>
+        </div>
+        
+    </section>
 
 </section>
 </main>
