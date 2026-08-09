@@ -102,3 +102,8 @@
   @apply hover:outline-[#A93200] hover:outline hover:bg-[#CDE3EE] transition-all duration-500;
 
 }
+
+@utility buttonsyleone
+{
+  @apply border border-[#A93200] text-[#A93200] p-[16px] rounded-[9999px];
+}
