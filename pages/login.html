@@ -5,7 +5,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home</title>
+  <title>Log In</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet"> 
@@ -32,20 +32,16 @@
         </ul>
     </div>
    
-    <div class="icons ">
-        <ul class="flex items-center gap-4">
-            <li><a href="#"><img src="../assets//imgs/icons/cart.svg"></a></li>
-            <li><a href="./profile.html"><img class=" rounded-full" src="../assets//imgs/header/profil.jpg" width="50px" height="50px"></a></li>
-        </ul>
-    </div>
+   
 </div>
 </header>
 
 <main>
-    <section class="capitalize">
+    
+    <section class="container m-auto capitalize row shadow-xl max-lg:flex-wrap">
       
         <div class="bg-[url('/assets/imgs/login/background.png')] bg-cover bg-center p-[32px] rounded-[16px] h-dvh max-sm:hidden">
-          <div class="flex flex-col  gap-[16px]  relative top-100">
+          <div class="flex flex-col  gap-[16px]  relative top-100 max-lg:top-10">
             <h2 class="font-semibold text-[#D0E6F1] ">feature roast</h2>
             <h1 class="font-bold text-white text-[32px]">the hearthstone blend</h1>
             <p class=" text-white">Deep notes of dark chocolate and toasted oats, perfect for slow
@@ -54,8 +50,79 @@
 
 
         </div>
+  
+        <section class="right flex flex-col p-[96px] gap-[16px] ">
+           
+            <div class="flex flex-col gap-1">
+                <h1 class="font-bold text-[32px]">Welcome Back</h1>
+                <p>Your daily artisanal ritual awaits. Please log in to
+                    your account.</p>
+            </div>
 
+            <img src="../assets/imgs/login/mbackground.png" alt="coffee image" class="min-sm:hidden">
+    
+            <div class="inputs flex flex-col gap-[16px] bg-[#FAF0E6] capitalize  rounded-[12px]">
+          
+
+        <div class="flex flex-col">
+            <label>email</label>
+            <input type="email" name="email" placeholder="elias@morningbrew.com" class="inputstyle bg-white">
+          </div>
+     
+         <div class="flex flex-col">
+            <label> password</label>
+            <input type="password" name="password" placeholder="**********" class="inputstyle bg-white">
+          </div>
+       
+
+        <div class=" flex justify-between">
+            <div>
+            <input type="checkbox" name="remember-me" class="accent-[#A93200]">
+            <label>
+                remember me
+            </label>
+        </div>
+
+            <a href="#" class="text-[#F94D00] font-semibold">forger password ?</a>
+        </div>
+       
+
+            <button class="buttonsyletwo hover:text-[#A93200]">log in into ember & oat</button>
+       </div>
+
+
+            <div class="continue-with row  flex-col gap-3 ">
+                <h1 class="font-bold">or continue with</h1>
+            
+                <div class="row gap-[34px] ">
+                
+                  <div class="flex  rounded-[12px] p-[17px] border border-[#E5BEB2] hoverstyle max-sm:bg-[#f8e9d9]">
+                    <a class="flex gap-1 ">
+                  <img src="../assets/imgs/icons/Google.png" alt="google icon">
+                  <h1>google</h1>
+                </a>
+                </div>
+      
+                <div class="flex gap-1 rounded-[12px] p-[17px] border border-[#E5BEB2] hoverstyle max-sm:bg-black ">
+                 <a class="row gap-1 ">
+                    <img src="../assets/imgs/icons/bApple.svg" alt="Apple icon" class="max-sm:hidden" >
+
+                  <img src="../assets/imgs/icons/Apple.svg" alt="Apple icon" class="min-sm:hidden">
+                  <h1 class="max-sm:text-white">Apple</h1>
+                </a>
+                </div>
+             
+              </div>
+             
+            </div>
+      
+           <div class="signup row justify-center gap-1 max-sm:hidden">
+            <p>don't have an Ember & Oat account?</p>
+            <a href="./signup.html" class="text-[#F94D00] hover:text-[#A93200] font-bold"> sign up</a>
+           </div>
         
+
+</section>
 
     </section>
 </main>
