@@ -204,6 +204,9 @@
   .top-40 {
     top: calc(var(--spacing) * 40);
   }
+  .top-50 {
+    top: calc(var(--spacing) * 50);
+  }
   .top-100 {
     top: calc(var(--spacing) * 100);
   }
@@ -1549,6 +1552,9 @@
     .max-sm\:order-5 {
       order: 5;
     }
+    .max-sm\:m-\[10px\] {
+      margin: 10px;
+    }
     .max-sm\:mx-\[10px\] {
       margin-inline: 10px;
     }
@@ -1637,6 +1643,9 @@
     .max-sm\:bg-center {
       background-position: center;
     }
+    .max-sm\:p-0 {
+      padding: 0px;
+    }
     .max-sm\:p-\[16px\] {
       padding: 16px;
     }
@@ -1648,6 +1657,9 @@
     }
     .max-sm\:text-start {
       text-align: start;
+    }
+    .max-sm\:text-\[12px\] {
+      font-size: 12px;
     }
     .max-sm\:text-\[13px\] {
       font-size: 13px;
