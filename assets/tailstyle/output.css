@@ -198,6 +198,9 @@
   .top-0 {
     top: 0px;
   }
+  .top-20 {
+    top: calc(var(--spacing) * 20);
+  }
   .top-40 {
     top: calc(var(--spacing) * 40);
   }
@@ -206,6 +209,15 @@
   }
   .top-105 {
     top: calc(var(--spacing) * 105);
+  }
+  .top-200 {
+    top: calc(var(--spacing) * 200);
+  }
+  .top-400 {
+    top: calc(var(--spacing) * 400);
+  }
+  .top-\[400xp\] {
+    top: 400xp;
   }
   .bottom-\[2px\] {
     bottom: 2px;
@@ -413,6 +425,12 @@
   }
   .grid {
     display: grid;
+  }
+  .h-2\.5 {
+    height: calc(var(--spacing) * 2.5);
+  }
+  .h-auto {
+    height: auto;
   }
   .h-dvh {
     height: 100dvh;
@@ -1005,11 +1023,23 @@
   .bg-\[\#ffffff81\] {
     background-color: #ffffff81;
   }
+  .bg-\[url\] {
+    background-color: url;
+  }
   .bg-black {
     background-color: var(--color-black);
   }
   .bg-white {
     background-color: var(--color-white);
+  }
+  .bg-\[url\(\'\'\)\] {
+    background-image: url('');
+  }
+  .bg-\[url\(\'\/a\'\)\] {
+    background-image: url('/a');
+  }
+  .bg-\[url\(\'\/asset\'\)\] {
+    background-image: url('/asset');
   }
   .bg-\[url\(\'\/assets\/imgs\/favoritesimg\/background\.png\'\)\] {
     background-image: url('/assets/imgs/favoritesimg/background.png');
@@ -1019,6 +1049,9 @@
   }
   .bg-\[url\(\'\/assets\/imgs\/gridslider\/gridslid\.png\'\)\] {
     background-image: url('/assets/imgs/gridslider/gridslid.png');
+  }
+  .bg-\[url\(\'\/assets\/imgs\/login\/background\.png\'\)\] {
+    background-image: url('/assets/imgs/login/background.png');
   }
   .bg-\[url\(\'\/assets\/imgs\/shop-imgs\/MorningRitualKit\.jpg\'\)\] {
     background-image: url('/assets/imgs/shop-imgs/MorningRitualKit.jpg');
@@ -1235,6 +1268,9 @@
   .text-\[\#A93200\] {
     color: #A93200;
   }
+  .text-\[\#D0E6F1\] {
+    color: #D0E6F1;
+  }
   .text-\[\#EBE1D7\] {
     color: #EBE1D7;
   }
@@ -1252,6 +1288,9 @@
   }
   .text-\[\#\] {
     color: #;
+  }
+  .text-\[white\] {
+    color: white;
   }
   .text-blue-400 {
     color: var(--color-blue-400);
@@ -1545,6 +1584,12 @@
     }
     .max-sm\:bg-white {
       background-color: var(--color-white);
+    }
+    .max-sm\:bg-\[url\(\'\/assets\/imgs\/login\/background\.png\'\)\] {
+      background-image: url('/assets/imgs/login/background.png');
+    }
+    .max-sm\:bg-\[url\(\'\/assets\/imgs\/login\/mbackground\.png\'\)\] {
+      background-image: url('/assets/imgs/login/mbackground.png');
     }
     .max-sm\:bg-\[url\(\'\/assets\/imgs\/shop-imgs\/seasonal\.png\'\)\] {
       background-image: url('/assets/imgs/shop-imgs/seasonal.png');
