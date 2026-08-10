@@ -19,6 +19,7 @@
     --color-blue-400: oklch(70.7% 0.165 254.624);
     --color-pink-200: oklch(89.9% 0.061 343.231);
     --color-gray-300: oklch(87.2% 0.01 258.338);
+    --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
     --font-weight-normal: 400;
@@ -196,6 +197,9 @@
   }
   .top-0 {
     top: 0px;
+  }
+  .top-40 {
+    top: calc(var(--spacing) * 40);
   }
   .top-100 {
     top: calc(var(--spacing) * 100);
@@ -410,6 +414,9 @@
   .h-dvh {
     height: 100dvh;
   }
+  .w-\[10px\] {
+    width: 10px;
+  }
   .w-\[20px\] {
     width: 20px;
   }
@@ -505,6 +512,9 @@
   }
   .gap-4 {
     gap: calc(var(--spacing) * 4);
+  }
+  .gap-5 {
+    gap: calc(var(--spacing) * 5);
   }
   .gap-5\.75 {
     gap: calc(var(--spacing) * 5.75);
@@ -695,10 +705,34 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
     border-color: #e5beb281;
+    transition-property: all;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+    --tw-duration: 500ms;
+    transition-duration: 500ms;
+    &:hover {
+      @media (hover: hover) {
+        background-color: #CDE3EE;
+      }
+    }
+    &:hover {
+      @media (hover: hover) {
+        outline-style: var(--tw-outline-style);
+        outline-width: 1px;
+      }
+    }
+    &:hover {
+      @media (hover: hover) {
+        outline-color: #A93200;
+      }
+    }
     background-color: #FCF2E8;
     padding-inline: 16px;
     padding-block: 13px;
     text-transform: capitalize;
+    @media (width < 40rem) {
+      background-color: #cde3ee74;
+    }
   }
   .buttonsyleone {
     border-radius: 9999px;
@@ -779,6 +813,9 @@
         padding: 16px;
       }
     }
+  }
+  .rounded-\[1\] {
+    border-radius: 1;
   }
   .rounded-\[4px\] {
     border-radius: 4px;
@@ -932,6 +969,9 @@
   .bg-\[\#FFDBCB\] {
     background-color: #FFDBCB;
   }
+  .bg-\[\#\] {
+    background-color: #;
+  }
   .bg-\[\#cde3ee4e\] {
     background-color: #cde3ee4e;
   }
@@ -941,14 +981,29 @@
   .bg-\[\#cde3eecc\] {
     background-color: #cde3eecc;
   }
+  .bg-\[\#d33f0022\] {
+    background-color: #d33f0022;
+  }
+  .bg-\[\#f4e1ce\] {
+    background-color: #f4e1ce;
+  }
   .bg-\[\#f6dbc0a1\] {
     background-color: #f6dbc0a1;
+  }
+  .bg-\[\#f6ece237\] {
+    background-color: #f6ece237;
   }
   .bg-\[\#f7d0a8\] {
     background-color: #f7d0a8;
   }
+  .bg-\[\#f8e9d9\] {
+    background-color: #f8e9d9;
+  }
   .bg-\[\#ffffff81\] {
     background-color: #ffffff81;
+  }
+  .bg-black {
+    background-color: var(--color-black);
   }
   .bg-white {
     background-color: var(--color-white);
@@ -977,6 +1032,9 @@
   .bg-center {
     background-position: center;
   }
+  .p-24 {
+    padding: calc(var(--spacing) * 24);
+  }
   .p-\[4px\] {
     padding: 4px;
   }
@@ -994,6 +1052,9 @@
   }
   .p-\[16px\] {
     padding: 16px;
+  }
+  .p-\[17px\] {
+    padding: 17px;
   }
   .p-\[20px\] {
     padding: 20px;
@@ -1186,6 +1247,9 @@
   .text-\[\#FFFBFF\] {
     color: #FFFBFF;
   }
+  .text-\[\#\] {
+    color: #;
+  }
   .text-blue-400 {
     color: var(--color-blue-400);
   }
@@ -1368,6 +1432,9 @@
     .max-md\:relative {
       position: relative;
     }
+    .max-md\:top-10 {
+      top: calc(var(--spacing) * 10);
+    }
     .max-md\:right-\[25px\] {
       right: 25px;
     }
@@ -1403,6 +1470,15 @@
     }
   }
   @media (width < 40rem) {
+    .max-sm\:order-1 {
+      order: 1;
+    }
+    .max-sm\:order-2 {
+      order: 2;
+    }
+    .max-sm\:order-5 {
+      order: 5;
+    }
     .max-sm\:mx-\[10px\] {
       margin-inline: 10px;
     }
@@ -1469,6 +1545,9 @@
     }
     .max-sm\:bg-\[url\(\'\/assets\/imgs\/shop-imgs\/seasonal\.png\'\)\] {
       background-image: url('/assets/imgs/shop-imgs/seasonal.png');
+    }
+    .max-sm\:bg-\[url\(\'\/assets\/imgs\/signup\/mbackground\.png\'\)\] {
+      background-image: url('/assets/imgs/signup/mbackground.png');
     }
     .max-sm\:bg-cover {
       background-size: cover;
@@ -1541,6 +1620,9 @@
     }
     .min-sm\:p-\[24px\] {
       padding: 24px;
+    }
+    .min-sm\:p-\[32px\] {
+      padding: 32px;
     }
   }
   @media (width >= 48rem) {

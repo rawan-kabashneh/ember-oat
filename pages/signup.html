@@ -32,10 +32,13 @@
         </header>
 <main>
      <section class="container m-auto flex gap-[24px] max-lg:flex-wrap">
-         <section class="left flex flex-col gap-[24px]">
+         <section class="left flex flex-col gap-[24px] capitalize">
         
-           <section class=" bg-[url('/assets/imgs/signup/background.png')] bg-cover bg-center  capitalize h-dvh rounded-[16px]">
-           <div class="flex flex-col  gap-[16px]  p-[32px] relative top-100">
+           <section class=" bg-[url('/assets/imgs/signup/background.png')] bg-cover bg-center  capitalize h-dvh rounded-[16px]  max-sm:bg-[url('/assets/imgs/signup/mbackground.png')] ">
+           
+           <h1 class="font-bold text-white text-[32px] min-sm:hidden relative top-40">begin your brew</h1>
+            
+           <div class="flex flex-col  gap-[16px]  p-[32px] absolute top-100 max-md:top-10  max-sm:hidden">
             <h1 class="font-bold text-white text-[32px]">The Oat Circle Benefits</h1>
            
             <div class="flex items-center gap-1 ">
@@ -71,27 +74,29 @@
         </div>
           
            </section>
-           <section class="border border-[#e5beb22b] p-[16px] rounded-[12px]">
+  
+           <section class="border border-[#e5beb22b] p-[16px] rounded-[12px] max-sm:hidden">
             <p >"Ember & Oat isn't just coffee; it's the highlight of
                 my morning ritual. Joining the community changed
                 how I brew." — Sarah K., Member since 2022</p>
-             </section>
+            </section>
 
+            <p class="min-sm:hidden">Join our specialty coffee community for exclusive bean drops, brewing masterclasses, and rewards that matter.</p>
          </section>
 
-         <section class="right">
+         <section class="right capitalize flex flex-col gap-[24px]">
             
-            <div class="flex flex-col gap-2">
+            <div class="flex flex-col gap-2 max-sm:hidden">
               <h1 class="text-[32px] font-bold text-[#A93200]">Begin Your Ritual</h1>
                <p>Join a community dedicated to the art of the perfect pour and the warmth of handcrafted coffee.</p>
           
             </div >
 
-           <div class="inputs flex flex-col gap-[16px] bg-white p-[32px] rounded-[12px]">
+           <div class="inputs flex flex-col gap-[16px] min-sm:bg-white capitalize min-sm:p-[32px] rounded-[12px]">
           
-            <div class="name flex justify-between">
+            <div class="name flex justify-between max-sm:hidden">
             
-                <div class="flex flex-col">
+                <div class="flex flex-col ">
             <label>first name</label>
             <input type="text" name="first name" placeholder="eillas" class="inputstyle">
           </div>
@@ -101,14 +106,20 @@
             <input type="text" name="last name" placeholder="oatley" class="inputstyle">
           </div>
          
+         
         </div>
-            
+
+             <div class="flex flex-col  min-sm:hidden">
+            <label>full name</label>
+            <input type="text" name="last name" placeholder="eillas oatley" class="inputstyle">
+          </div>
+
         <div class="flex flex-col">
             <label>email</label>
             <input type="email" name="email" placeholder="elias@morningbrew.com" class="inputstyle">
           </div>
 
-          <div class="flex flex-col">
+          <div class="flex flex-col max-sm:hidden">
             <label>phone number(optinal)</label>
             <div class="flex">
               <h1 class="bg-[#F0E7DD] border border-[#E5BEB2] rounded-l-[16px] p-[16px] w-fit">+1</h1>
@@ -119,13 +130,13 @@
          <div class="flex flex-col">
             <label>create password</label>
             <input type="password" name="password" placeholder="**********" class="inputstyle">
-           <div class="mt-[23px]">
+           <div class="mt-[23px] max-sm:hidden">
             <h1 class="border-b-2 border-b-[#BA1A1A] ">Password Strength</h1>
             <p class="text-[12px]">USE 8+ CHARACTERS WITH SYMBOLS & NUMBERS</p>
           </div>
         </div>
 
-        <div>
+        <div class="max-sm:order-1">
             <input type="checkbox" name="policy">
             <label>
                 I agree to the Terms of Service and Privacy Policy. I also consent to receive updates about new roasts and brew sessions.
@@ -133,14 +144,73 @@
         </div>
        
 
-            <button class="buttonsyletwo">create your account ></button>
+            <button class="buttonsyletwo ">create your account ></button>
        
-           <div class="row justify-center gap-1 ">
+           <div class="row justify-center gap-1 max-sm:hidden">
             <p>Already have an Ember & Oat account?</p>
             <a href="./login.html" class="text-[#A93200]"> Log In Here</a>
            </div>
         </div>
+
+        <div class="continue-with row  flex-col gap-3 min-sm:hidden">
+          <h1>or continue with</h1>
+      
+          <div class="flex gap-[34px] ">
+          
+            <div class="flex  rounded-[12px] p-[17px] bg-[#f8e9d9]">
+              <a class="flex gap-1 ">
+            <img src="../assets/imgs/icons/Google.png" alt="google icon">
+            <h1>google</h1>
+          </a>
+          </div>
+
+          <div class="flex gap-1 rounded-[12px] p-[17px]  bg-black text-white">
+           <a class="flex gap-1  ">
+            <img src="../assets/imgs/icons/Apple.svg" alt="Apple icon" >
+            <h1 class="text-white">Apple</h1>
+          </a>
+          </div>
+       
+        </div>
+       
+      </div>
+
+      <div class="flex flex-col gap-4 bg-[#d33f0022] p-[24px] rounded-[16px] min-sm:hidden">
         
+        <h1 class="font-bold text-[24px] text-[#A93200]">The Roaster's Club</h1>
+      
+        <div class="flex gap-2">
+          <img src="../assets/imgs/signup/drops.svg" alt="Priority Drops">
+          <div class="flex flex-col gap-1">
+            <h1 class="font-bold">Priority Drops</h1>
+            <p>Early access to small-batch micro-lots from Ethiopia and Colombia.</p>
+          </div>
+        </div>
+
+
+        <div class="flex gap-2">
+          <img src="../assets/imgs/signup/rewards.svg" alt="rewards Drops">
+          <div class="flex flex-col gap-1">
+            <h1 class="font-bold">Bean Rewards</h1>
+            <p>Earn 10 beans for every cup. 100 beans = 1 free handcrafted brew.</p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="flex justify-between bg-[#F0E7DD] p-[24px] rounded-[16px] min-sm:hidden">
+       <div class="flex flex-col gap-1">
+        <h1 class="font-semibold">The Weekly Grind</h1>
+        <p>Brew guides and roaster notes<br>
+          delivered to your inbox.</p>
+       </div> 
+       <img src="../assets/imgs/icons/mode.svg" class="mode button" width="50px">
+    </div>
+    
+    <div class="login row justify-center gap-1 min-sm:hidden ">
+        <p class="font-bold">Already have an Ember & Oat account?</p>
+        <a href="./login.html" class="text-[#A93200]"> Log In Here</a>
+       </div>
+
     </section>
 
 </section>
