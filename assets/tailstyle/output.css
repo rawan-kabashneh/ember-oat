@@ -324,6 +324,17 @@
   .ml-\[30px\] {
     margin-left: 30px;
   }
+  .rightlogin {
+    height: 100dvh;
+    border-radius: 16px;
+    background-image: url('/assets/imgs/login/background.png');
+    background-size: cover;
+    background-position: center;
+    padding: 32px;
+    @media (width < 40rem) {
+      display: none;
+    }
+  }
   .size-choosen {
     display: flex;
     flex-direction: column;
@@ -1031,21 +1042,6 @@
   .bg-white {
     background-color: var(--color-white);
   }
-  .bg-\[url\(\'\.\.\.\/assets\/imgs\/signup\/background\.png\'\)\] {
-    background-image: url('.../assets/imgs/signup/background.png');
-  }
-  .bg-\[url\(\'\.\.\/\.\.\/assets\/imgs\/login\/background\.png\'\)\] {
-    background-image: url('../../assets/imgs/login/background.png');
-  }
-  .bg-\[url\(\'\.\.\/\.\.\/assets\/imgs\/signup\/background\.png\'\)\] {
-    background-image: url('../../assets/imgs/signup/background.png');
-  }
-  .bg-\[url\(\'\.\.\/assets\/imgs\/login\/background\.png\'\)\] {
-    background-image: url('../assets/imgs/login/background.png');
-  }
-  .bg-\[url\(\'\.\/assets\/imgs\/login\/background\.png\'\)\] {
-    background-image: url('./assets/imgs/login/background.png');
-  }
   .bg-\[url\(\'\/assets\/imgs\/favoritesimg\/background\.png\'\)\] {
     background-image: url('/assets/imgs/favoritesimg/background.png');
   }
@@ -1066,12 +1062,6 @@
   }
   .bg-\[url\(\'\/assets\/imgs\/signup\/background\.png\'\)\] {
     background-image: url('/assets/imgs/signup/background.png');
-  }
-  .bg-\[url\(\'\/ember-oat\/assets\/imgs\/login\/background\.png\'\)\] {
-    background-image: url('/ember-oat/assets/imgs/login/background.png');
-  }
-  .bg-\[url\(\'assets\/imgs\/login\/background\.png\'\)\] {
-    background-image: url('assets/imgs/login/background.png');
   }
   .bg-cover {
     background-size: cover;
@@ -1620,18 +1610,6 @@
     }
     .max-sm\:bg-white {
       background-color: var(--color-white);
-    }
-    .max-sm\:bg-\[url\(\'\.\.\.\.\/assets\/imgs\/signup\/mbackground\.png\'\)\] {
-      background-image: url('..../assets/imgs/signup/mbackground.png');
-    }
-    .max-sm\:bg-\[url\(\'\.\.\.\/assets\/imgs\/signup\/mbackground\.png\'\)\] {
-      background-image: url('.../assets/imgs/signup/mbackground.png');
-    }
-    .max-sm\:bg-\[url\(\'\.\.\/\.\.\/assets\/imgs\/signup\/mbackground\.png\'\)\] {
-      background-image: url('../../assets/imgs/signup/mbackground.png');
-    }
-    .max-sm\:bg-\[url\(\'\.\/assets\/imgs\/signup\/mbackground\.png\'\)\] {
-      background-image: url('./assets/imgs/signup/mbackground.png');
     }
     .max-sm\:bg-\[url\(\'\/assets\/imgs\/shop-imgs\/seasonal\.png\'\)\] {
       background-image: url('/assets/imgs/shop-imgs/seasonal.png');
