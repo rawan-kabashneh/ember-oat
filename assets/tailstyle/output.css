@@ -1515,6 +1515,9 @@
     .max-md\:gap-2 {
       gap: calc(var(--spacing) * 2);
     }
+    .max-md\:bg-\[url\(\'\.\.\/imgs\/slider\/sliderphone\.png\'\)\] {
+      background-image: url('../imgs/slider/sliderphone.png');
+    }
     .max-md\:bg-\[url\(\'\.\/imgs\/slider\/sliderphone\.png\'\)\] {
       background-image: url('./imgs/slider/sliderphone.png');
     }
