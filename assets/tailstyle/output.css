@@ -432,10 +432,10 @@
   .grid {
     display: grid;
   }
-  .rightsignup {
+  .leftsignup {
     height: 100dvh;
     border-radius: 16px;
-    background-image: url('../imgs/signup/background.png');
+    background-image: url('./imgs/signup/background.png');
     background-size: cover;
     background-position: center;
     text-transform: capitalize;

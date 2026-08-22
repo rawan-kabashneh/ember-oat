@@ -38,9 +38,9 @@
  }
 
 
- @utility rightsignup
+ @utility leftsignup
  {
-  @apply bg-[url('../imgs/signup/background.png')] bg-cover bg-center  capitalize h-dvh rounded-[16px]  max-sm:bg-[url('./assets/imgs/signup/mbackground.png')];
+  @apply bg-[url('./imgs/signup/background.png')] bg-cover bg-center  capitalize h-dvh rounded-[16px]  max-sm:bg-[url('./assets/imgs/signup/mbackground.png')];
  }
 
  @utility rightlogin
