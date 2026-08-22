@@ -54,7 +54,7 @@
 }
 @utility popularproduct
 {
-  @apply bg-white hover:bg-[#CDE3EE] transition-all duration-500 flex flex-col gap-1  rounded-b-[12px];
+  @apply rounded-[12px] bg-white hoverstyle flex flex-col gap-1  rounded-b-[12px];
 }
 @utility recommend
 {
@@ -78,8 +78,13 @@
 
 @utility shopproduct
 {
-  @apply rounded-[16px] flex flex-col capitalize hover:drop-shadow-lg hover:bg-[#CDE3EE] transition-all duration-500  max-sm:w-[35%];
+  @apply rounded-[16px] flex flex-col capitalize  hoverstyle  max-sm:w-[35%];
 }
+
+@utility recently-viewed{
+  @apply rounded-[16px] flex flex-col gap-[8px]  hoverstyle capitalize;
+}
+
 @utility size-choosen
 {
  @apply flex flex-col gap-[4px] items-center border border-[#A93200] bg-[#ffdbd00b] rounded-[12px] px-[34px] py-[16px] max-sm:p-[8px] hoverstyle ;
