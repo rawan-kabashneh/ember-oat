@@ -324,10 +324,10 @@
   .ml-\[30px\] {
     margin-left: 30px;
   }
-  .rightlogin {
+  .leftlogin {
     height: 100dvh;
     border-radius: 16px;
-    background-image: url('/assets/imgs/login/background.png');
+    background-image: url('../imgs/login/background.png');
     background-size: cover;
     background-position: center;
     padding: 32px;
@@ -440,7 +440,7 @@
     background-position: center;
     text-transform: capitalize;
     @media (width < 40rem) {
-      background-image: url('./assets/imgs/signup/mbackground.png');
+      background-image: url('./imgs/signup/mbackground.png');
     }
   }
   .w-75 {

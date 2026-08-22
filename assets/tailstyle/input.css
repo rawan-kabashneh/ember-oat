@@ -40,12 +40,12 @@
 
  @utility leftsignup
  {
-  @apply bg-[url('./imgs/signup/background.png')] bg-cover bg-center  capitalize h-dvh rounded-[16px]  max-sm:bg-[url('./assets/imgs/signup/mbackground.png')];
+  @apply bg-[url('./imgs/signup/background.png')] bg-cover bg-center  capitalize h-dvh rounded-[16px]  max-sm:bg-[url('./imgs/signup/mbackground.png')];
  }
 
- @utility rightlogin
+ @utility leftlogin
  {
-  @apply bg-[url('/assets/imgs/login/background.png')] bg-cover bg-center p-[32px] rounded-[16px] h-dvh max-sm:hidden;
+  @apply bg-[url('../imgs/login/background.png')] bg-cover bg-center p-[32px] rounded-[16px] h-dvh max-sm:hidden;
  }
 
 @utility categorie
