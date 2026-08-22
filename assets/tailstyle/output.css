@@ -327,7 +327,7 @@
   .leftlogin {
     height: 100dvh;
     border-radius: 16px;
-    background-image: url('../imgs/login/background.png');
+    background-image: url('/imgs/login/background.png');
     background-size: cover;
     background-position: center;
     padding: 32px;

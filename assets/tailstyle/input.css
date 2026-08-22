@@ -45,7 +45,7 @@
 
  @utility leftlogin
  {
-  @apply bg-[url('../imgs/login/background.png')] bg-cover bg-center p-[32px] rounded-[16px] h-dvh max-sm:hidden;
+  @apply bg-[url('/imgs/login/background.png')] bg-cover bg-center p-[32px] rounded-[16px] h-dvh max-sm:hidden;
  }
 
 @utility categorie
