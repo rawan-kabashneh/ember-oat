@@ -1045,6 +1045,12 @@
   .bg-\[url\(\'\/assets\/imgs\/shop-imgs\/coffee\.png\'\)\] {
     background-image: url('/assets/imgs/shop-imgs/coffee.png');
   }
+  .bg-\[url\(\'\/imgs\/gridslider\/Banner\.png\'\)\] {
+    background-image: url('/imgs/gridslider/Banner.png');
+  }
+  .bg-\[url\(\'\/imgs\/gridslider\/gridslid\.png\'\)\] {
+    background-image: url('/imgs/gridslider/gridslid.png');
+  }
   .bg-cover {
     background-size: cover;
   }
@@ -1502,6 +1508,9 @@
     }
     .max-md\:bg-\[url\(\'\/assets\/imgs\/slider\/sliderphone\.png\'\)\] {
       background-image: url('/assets/imgs/slider/sliderphone.png');
+    }
+    .max-md\:bg-\[url\(\'\/imgs\/slider\/sliderphone\.png\'\)\] {
+      background-image: url('/imgs/slider/sliderphone.png');
     }
     .max-md\:bg-cover {
       background-size: cover;
