@@ -1712,6 +1712,9 @@
     .min-md\:bg-\[url\(\'\/assets\/imgs\/slider\/sliderim\.png\'\)\] {
       background-image: url('/assets/imgs/slider/sliderim.png');
     }
+    .min-md\:bg-\[url\(\'\/imgs\/slider\/sliderim\.png\'\)\] {
+      background-image: url('/imgs/slider/sliderim.png');
+    }
     .min-md\:bg-cover {
       background-size: cover;
     }
