@@ -65,6 +65,14 @@
   @apply   group-hover:text-red-500 transition-all duration-[5.s] ;
 }
 
+@utility mfooter{
+  @apply capitalize sticky bottom-0 p-[8px] bg-[#fef2ea]  min-lg:hidden border-t-2 border-[#E5BEB2];
+}
+
+@utility footerbarhover
+{
+  @apply hover:rounded-[9999px] hover:bg-[#f1d0c7]  hover:p-[10px] ;
+}
 @utility hover-text
 {
   @apply   group-hover:text-white transition-all duration-[5.s] ;

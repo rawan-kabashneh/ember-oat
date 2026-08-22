@@ -186,6 +186,19 @@
   }
 }
 @layer utilities {
+  .mfooter {
+    position: sticky;
+    bottom: 0px;
+    border-top-style: var(--tw-border-style);
+    border-top-width: 2px;
+    border-color: #E5BEB2;
+    background-color: #fef2ea;
+    padding: 8px;
+    text-transform: capitalize;
+    @media (width >= 64rem) {
+      display: none;
+    }
+  }
   .absolute {
     position: absolute;
   }
@@ -522,12 +535,6 @@
   .w-\[60px\] {
     width: 60px;
   }
-  .w-auto {
-    width: auto;
-  }
-  .w-dvh {
-    width: 100dvh;
-  }
   .w-fit {
     width: fit-content;
   }
@@ -686,9 +693,6 @@
   }
   .gap-\[40px\] {
     gap: 40px;
-  }
-  .gap-\[48px\] {
-    gap: 48px;
   }
   .gap-\[60px\] {
     gap: 60px;
@@ -926,6 +930,13 @@
       @media (hover: hover) {
         padding: 16px;
       }
+    }
+  }
+  @media (hover: hover) {
+    .footerbarhover:hover {
+      border-radius: 9999px;
+      background-color: #f1d0c7;
+      padding: 10px;
     }
   }
   .rounded-\[4px\] {
@@ -1793,6 +1804,9 @@
     .min-lg\:block {
       display: block;
     }
+    .min-lg\:hidden {
+      display: none;
+    }
     .min-lg\:justify-between {
       justify-content: space-between;
     }
@@ -1811,16 +1825,16 @@
     font-family: var(--p-h1-font);
   }
 }
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
 @property --tw-duration {
   syntax: "*";
   inherits: false;
 }
 @property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
-@property --tw-border-style {
   syntax: "*";
   inherits: false;
   initial-value: solid;
@@ -1950,9 +1964,9 @@
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
+      --tw-border-style: solid;
       --tw-duration: initial;
       --tw-outline-style: solid;
-      --tw-border-style: solid;
       --tw-font-weight: initial;
       --tw-shadow: 0 0 #0000;
       --tw-shadow-color: initial;
