@@ -435,7 +435,7 @@
   .rightsignup {
     height: 100dvh;
     border-radius: 16px;
-    background-image: url('/assets/imgs/signup/background.png');
+    background-image: url('../imgs/signup/background.png');
     background-size: cover;
     background-position: center;
     text-transform: capitalize;
@@ -849,24 +849,6 @@
       }
     }
   }
-  .footerbarhover {
-    border-radius: 9999px;
-    &:hover {
-      @media (hover: hover) {
-        background-color: #fad9cb;
-      }
-    }
-    &:hover {
-      @media (hover: hover) {
-        padding-inline: 16px;
-      }
-    }
-    &:hover {
-      @media (hover: hover) {
-        padding-block: 4px;
-      }
-    }
-  }
   .rounded-\[4px\] {
     border-radius: 4px;
   }
@@ -1164,9 +1146,6 @@
   }
   .py-\[16px\] {
     padding-block: 16px;
-  }
-  .py-\[20px\] {
-    padding-block: 20px;
   }
   .py-\[24px\] {
     padding-block: 24px;

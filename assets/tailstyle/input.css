@@ -128,7 +128,3 @@
 {
   @apply border border-[#e5beb281] bg-[#FCF2E8] capitalize px-[16px] py-[13px] rounded-[8px] hoverstyle  max-sm:bg-[#cde3ee74]  ;
 }
-
-@utility footerbarhover{
-  @apply hover:bg-[#fad9cb]  hover:px-[16px] hover:py-[4px] rounded-[9999px];
-}
