@@ -1033,6 +1033,9 @@
   .bg-\[url\(\'\.\.\/imgs\/gridslider\/gridslid\.png\'\)\] {
     background-image: url('../imgs/gridslider/gridslid.png');
   }
+  .bg-\[url\(\'\.\/imgs\/gridslider\/gridslid\.png\'\)\] {
+    background-image: url('./imgs/gridslider/gridslid.png');
+  }
   .bg-\[url\(\'\/assets\/imgs\/favoritesimg\/background\.png\'\)\] {
     background-image: url('/assets/imgs/favoritesimg/background.png');
   }
