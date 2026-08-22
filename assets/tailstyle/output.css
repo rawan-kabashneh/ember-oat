@@ -1036,6 +1036,9 @@
   .bg-\[url\(\'\.\.\/imgs\/gridslider\/gridslid\.png\'\)\] {
     background-image: url('../imgs/gridslider/gridslid.png');
   }
+  .bg-\[url\(\'\.\.\/imgs\/shop-imgs\/coffee\.png\'\)\] {
+    background-image: url('../imgs/shop-imgs/coffee.png');
+  }
   .bg-\[url\(\'\.\/imgs\/gridslider\/Banner\.png\'\)\] {
     background-image: url('./imgs/gridslider/Banner.png');
   }
