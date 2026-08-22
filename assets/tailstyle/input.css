@@ -54,7 +54,7 @@
 }
 @utility popularproduct
 {
-  @apply bg-white hover:bg-[#CDE3EE] transition-all duration-500 flex flex-col gap-1 px-[20px] py-[20px] rounded-b-[12px];
+  @apply bg-white hover:bg-[#CDE3EE] transition-all duration-500 flex flex-col gap-1  rounded-b-[12px];
 }
 @utility recommend
 {
