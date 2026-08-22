@@ -335,6 +335,32 @@
       display: none;
     }
   }
+  .shopproduct {
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    text-transform: capitalize;
+    transition-property: all;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+    --tw-duration: 500ms;
+    transition-duration: 500ms;
+    &:hover {
+      @media (hover: hover) {
+        background-color: #CDE3EE;
+      }
+    }
+    &:hover {
+      @media (hover: hover) {
+        --tw-drop-shadow-size: drop-shadow(0 4px 4px var(--tw-drop-shadow-color, rgb(0 0 0 / 0.15)));
+        --tw-drop-shadow: drop-shadow(var(--drop-shadow-lg));
+        filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+      }
+    }
+    @media (width < 40rem) {
+      width: 35%;
+    }
+  }
   .size-choosen {
     display: flex;
     flex-direction: column;
@@ -1039,32 +1065,11 @@
   .bg-\[url\(\'\.\.\/imgs\/shop-imgs\/coffee\.png\'\)\] {
     background-image: url('../imgs/shop-imgs/coffee.png');
   }
-  .bg-\[url\(\'\.\/imgs\/gridslider\/Banner\.png\'\)\] {
-    background-image: url('./imgs/gridslider/Banner.png');
-  }
-  .bg-\[url\(\'\.\/imgs\/gridslider\/gridslid\.png\'\)\] {
-    background-image: url('./imgs/gridslider/gridslid.png');
-  }
   .bg-\[url\(\'\/assets\/imgs\/favoritesimg\/background\.png\'\)\] {
     background-image: url('/assets/imgs/favoritesimg/background.png');
   }
-  .bg-\[url\(\'\/assets\/imgs\/gridslider\/Banner\.png\'\)\] {
-    background-image: url('/assets/imgs/gridslider/Banner.png');
-  }
-  .bg-\[url\(\'\/assets\/imgs\/gridslider\/gridslid\.png\'\)\] {
-    background-image: url('/assets/imgs/gridslider/gridslid.png');
-  }
   .bg-\[url\(\'\/assets\/imgs\/shop-imgs\/MorningRitualKit\.jpg\'\)\] {
     background-image: url('/assets/imgs/shop-imgs/MorningRitualKit.jpg');
-  }
-  .bg-\[url\(\'\/assets\/imgs\/shop-imgs\/coffee\.png\'\)\] {
-    background-image: url('/assets/imgs/shop-imgs/coffee.png');
-  }
-  .bg-\[url\(\'\/imgs\/gridslider\/Banner\.png\'\)\] {
-    background-image: url('/imgs/gridslider/Banner.png');
-  }
-  .bg-\[url\(\'\/imgs\/gridslider\/gridslid\.png\'\)\] {
-    background-image: url('/imgs/gridslider/gridslid.png');
   }
   .bg-cover {
     background-size: cover;
@@ -1122,6 +1127,9 @@
   }
   .px-\[8px\] {
     padding-inline: 8px;
+  }
+  .px-\[10px\] {
+    padding-inline: 10px;
   }
   .px-\[12px\] {
     padding-inline: 12px;
@@ -1200,6 +1208,9 @@
   }
   .pb-\[4px\] {
     padding-bottom: 4px;
+  }
+  .pb-\[16px\] {
+    padding-bottom: 16px;
   }
   .pb-\[20px\] {
     padding-bottom: 20px;
@@ -1524,15 +1535,6 @@
     .max-md\:bg-\[url\(\'\.\.\/imgs\/slider\/sliderphone\.png\'\)\] {
       background-image: url('../imgs/slider/sliderphone.png');
     }
-    .max-md\:bg-\[url\(\'\.\/imgs\/slider\/sliderphone\.png\'\)\] {
-      background-image: url('./imgs/slider/sliderphone.png');
-    }
-    .max-md\:bg-\[url\(\'\/assets\/imgs\/slider\/sliderphone\.png\'\)\] {
-      background-image: url('/assets/imgs/slider/sliderphone.png');
-    }
-    .max-md\:bg-\[url\(\'\/imgs\/slider\/sliderphone\.png\'\)\] {
-      background-image: url('/imgs/slider/sliderphone.png');
-    }
     .max-md\:bg-cover {
       background-size: cover;
     }
@@ -1635,9 +1637,6 @@
     .max-sm\:bg-\[url\(\'\.\.\/imgs\/shop-imgs\/seasonal\.png\'\)\] {
       background-image: url('../imgs/shop-imgs/seasonal.png');
     }
-    .max-sm\:bg-\[url\(\'\/assets\/imgs\/shop-imgs\/seasonal\.png\'\)\] {
-      background-image: url('/assets/imgs/shop-imgs/seasonal.png');
-    }
     .max-sm\:bg-cover {
       background-size: cover;
     }
@@ -1730,15 +1729,6 @@
     .min-md\:bg-\[url\(\'\.\.\/imgs\/slider\/sliderim\.png\'\)\] {
       background-image: url('../imgs/slider/sliderim.png');
     }
-    .min-md\:bg-\[url\(\'\.\/imgs\/slider\/sliderim\.png\'\)\] {
-      background-image: url('./imgs/slider/sliderim.png');
-    }
-    .min-md\:bg-\[url\(\'\/assets\/imgs\/slider\/sliderim\.png\'\)\] {
-      background-image: url('/assets/imgs/slider/sliderim.png');
-    }
-    .min-md\:bg-\[url\(\'\/imgs\/slider\/sliderim\.png\'\)\] {
-      background-image: url('/imgs/slider/sliderim.png');
-    }
     .min-md\:bg-cover {
       background-size: cover;
     }
@@ -1772,14 +1762,67 @@
     font-family: var(--p-h1-font);
   }
 }
+@property --tw-duration {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-blur {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-brightness {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-contrast {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-grayscale {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-hue-rotate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-invert {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-opacity {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-saturate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-sepia {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-drop-shadow {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-drop-shadow-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-drop-shadow-alpha {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-drop-shadow-size {
+  syntax: "*";
+  inherits: false;
+}
 @property --tw-border-style {
   syntax: "*";
   inherits: false;
   initial-value: solid;
-}
-@property --tw-duration {
-  syntax: "*";
-  inherits: false;
 }
 @property --tw-outline-style {
   syntax: "*";
@@ -1855,64 +1898,24 @@
   inherits: false;
   initial-value: 0 0 #0000;
 }
-@property --tw-blur {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-brightness {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-contrast {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-grayscale {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-hue-rotate {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-invert {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-opacity {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-saturate {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-sepia {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-drop-shadow {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-drop-shadow-color {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-drop-shadow-alpha {
-  syntax: "<percentage>";
-  inherits: false;
-  initial-value: 100%;
-}
-@property --tw-drop-shadow-size {
-  syntax: "*";
-  inherits: false;
-}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
-      --tw-border-style: solid;
       --tw-duration: initial;
+      --tw-blur: initial;
+      --tw-brightness: initial;
+      --tw-contrast: initial;
+      --tw-grayscale: initial;
+      --tw-hue-rotate: initial;
+      --tw-invert: initial;
+      --tw-opacity: initial;
+      --tw-saturate: initial;
+      --tw-sepia: initial;
+      --tw-drop-shadow: initial;
+      --tw-drop-shadow-color: initial;
+      --tw-drop-shadow-alpha: 100%;
+      --tw-drop-shadow-size: initial;
+      --tw-border-style: solid;
       --tw-outline-style: solid;
       --tw-font-weight: initial;
       --tw-shadow: 0 0 #0000;
@@ -1929,19 +1932,6 @@
       --tw-ring-offset-width: 0px;
       --tw-ring-offset-color: #fff;
       --tw-ring-offset-shadow: 0 0 #0000;
-      --tw-blur: initial;
-      --tw-brightness: initial;
-      --tw-contrast: initial;
-      --tw-grayscale: initial;
-      --tw-hue-rotate: initial;
-      --tw-invert: initial;
-      --tw-opacity: initial;
-      --tw-saturate: initial;
-      --tw-sepia: initial;
-      --tw-drop-shadow: initial;
-      --tw-drop-shadow-color: initial;
-      --tw-drop-shadow-alpha: 100%;
-      --tw-drop-shadow-size: initial;
     }
   }
 }

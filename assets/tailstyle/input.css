@@ -76,6 +76,10 @@
   @apply rounded-[12px] hover:outline hover:outline-2 hover:outline-[#A93200] transition-all duration-500 overflow-scroll ;
 }
 
+@utility shopproduct
+{
+  @apply rounded-[16px] flex flex-col capitalize hover:drop-shadow-lg hover:bg-[#CDE3EE] transition-all duration-500  max-sm:w-[35%];
+}
 @utility size-choosen
 {
  @apply flex flex-col gap-[4px] items-center border border-[#A93200] bg-[#ffdbd00b] rounded-[12px] px-[34px] py-[16px] max-sm:p-[8px] hoverstyle ;
