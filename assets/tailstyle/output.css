@@ -1033,6 +1033,9 @@
   .bg-\[url\(\'\.\.\/imgs\/gridslider\/gridslid\.png\'\)\] {
     background-image: url('../imgs/gridslider/gridslid.png');
   }
+  .bg-\[url\(\'\.\/imgs\/gridslider\/Banner\.png\'\)\] {
+    background-image: url('./imgs/gridslider/Banner.png');
+  }
   .bg-\[url\(\'\.\/imgs\/gridslider\/gridslid\.png\'\)\] {
     background-image: url('./imgs/gridslider/gridslid.png');
   }
@@ -1511,6 +1514,9 @@
     }
     .max-md\:gap-2 {
       gap: calc(var(--spacing) * 2);
+    }
+    .max-md\:bg-\[url\(\'\.\/imgs\/slider\/sliderphone\.png\'\)\] {
+      background-image: url('./imgs/slider/sliderphone.png');
     }
     .max-md\:bg-\[url\(\'\/assets\/imgs\/slider\/sliderphone\.png\'\)\] {
       background-image: url('/assets/imgs/slider/sliderphone.png');
