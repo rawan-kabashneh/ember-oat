@@ -1030,6 +1030,9 @@
   .bg-white {
     background-color: var(--color-white);
   }
+  .bg-\[url\(\'\.\.\/imgs\/gridslider\/Banner\.png\'\)\] {
+    background-image: url('../imgs/gridslider/Banner.png');
+  }
   .bg-\[url\(\'\.\.\/imgs\/gridslider\/gridslid\.png\'\)\] {
     background-image: url('../imgs/gridslider/gridslid.png');
   }
