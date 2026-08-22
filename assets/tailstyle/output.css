@@ -1632,6 +1632,9 @@
     .max-sm\:bg-white {
       background-color: var(--color-white);
     }
+    .max-sm\:bg-\[url\(\'\.\.\/imgs\/shop-imgs\/seasonal\.png\'\)\] {
+      background-image: url('../imgs/shop-imgs/seasonal.png');
+    }
     .max-sm\:bg-\[url\(\'\/assets\/imgs\/shop-imgs\/seasonal\.png\'\)\] {
       background-image: url('/assets/imgs/shop-imgs/seasonal.png');
     }
