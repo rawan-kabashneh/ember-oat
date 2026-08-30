@@ -1612,6 +1612,13 @@
       color: var(--color-white);
     }
   }
+  @media (hover: hover) {
+    @media (width < 48rem) {
+      .hover\:max-md\:hidden:hover {
+        display: none;
+      }
+    }
+  }
   @media (width < 40rem) {
     .max-sm\:order-1 {
       order: 1;
