@@ -256,6 +256,9 @@
       max-width: 96rem;
     }
   }
+  .m-\[10px\] {
+    margin: 10px;
+  }
   .m-auto {
     margin: auto;
   }
@@ -538,8 +541,14 @@
   .w-full {
     width: 100%;
   }
+  .flex-0 {
+    flex: 0;
+  }
   .flex-1 {
     flex: 1;
+  }
+  .flex-2 {
+    flex: 2;
   }
   .flex-auto {
     flex: auto;
