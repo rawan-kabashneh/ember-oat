@@ -223,9 +223,6 @@
   .top-105 {
     top: calc(var(--spacing) * 105);
   }
-  .bottom-0 {
-    bottom: 0px;
-  }
   .bottom-\[2px\] {
     bottom: 2px;
   }
@@ -1087,9 +1084,6 @@
   .bg-\[\#FFDBCB\] {
     background-color: #FFDBCB;
   }
-  .bg-\[\#FFF8F3\] {
-    background-color: #FFF8F3;
-  }
   .bg-\[\#cde3ee4e\] {
     background-color: #cde3ee4e;
   }
@@ -1803,9 +1797,6 @@
     }
     .min-lg\:block {
       display: block;
-    }
-    .min-lg\:hidden {
-      display: none;
     }
     .min-lg\:justify-between {
       justify-content: space-between;
