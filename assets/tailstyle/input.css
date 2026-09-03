@@ -25,6 +25,7 @@
     h1, h2, h3, h4, h5, h6 
     {
        color: var(--p-h-color);
+       width:fit-content;
 
     }
     h1
@@ -66,7 +67,7 @@
 }
 
 @utility mfooter{
-  @apply capitalize sticky bottom-0 p-[8px] bg-[#fef2ea]  min-lg:hidden border-t-2 border-[#E5BEB2];
+  @apply capitalize sticky bottom-0 p-[8px] bg-[#fef2ea]  min-lg:hidden  border-t-2 border-[#E5BEB2];
 }
 
 @utility footerbarhover
@@ -95,12 +96,12 @@
 
 @utility size-choosen
 {
- @apply flex flex-col gap-[4px] items-center border border-[#A93200] bg-[#ffdbd00b] rounded-[12px] px-[34px] py-[16px] max-sm:p-[8px] hoverstyle ;
+ @apply flex flex-col gap-[4px] items-center border border-[#A93200] bg-[#ffdbd00b] rounded-[12px] px-[34px] py-[16px] max-sm:p-[8px]  hoverstyle w-fit;
 }
 
 @utility milk-choosen
 {
-  @apply bg-[#EBE1D7] hoverstyle px-[24px] py-[8px] max-sm:p-[8px]  rounded-[9999px] text-center ;
+  @apply bg-[#EBE1D7] hoverstyle px-[24px] py-[8px] max-sm:px-[8px]  rounded-[9999px] text-center ;
 }
 
 @utility caffeine
@@ -110,7 +111,7 @@
 
 @utility mtopping
 {
-  @apply bg-[#F6ECE2] p-[16px] rounded-[16px] accent-[#A93200] ;
+  @apply bg-[#F6ECE2] p-[9px] rounded-[16px] accent-[#A93200] ;
 }
 
 @utility pickup-time

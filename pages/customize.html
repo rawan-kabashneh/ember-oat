@@ -15,8 +15,8 @@
 
 <body>
     <header class="sticky top-0 bg-[#FAF0E6] z-10">
-        <div class="max-sm:gap-10  bg-[#FAF0E6] container m-auto  min-sm:justify-between row gap-20 py-4 max-md:mx-[10px]">
-        <div class="logo">
+        <div class="max-sm:gap-10  bg-[#FAF0E6] min-sm:container min-sm:m-auto  min-sm:justify-between max-sm:mx-[10px] row gap-20 py-4 ">
+            <div class="logo">
             <img src="../assets//imgs/header/logo.svg">
         </div>
         
@@ -38,11 +38,11 @@
     </div>
     </header>
    
- <main>
+ <main> 
   
-        <section class="costumize mb-[80px] max-lg:mx-[10px]">
+        <section class="costumize mb-[80px]  ">
             
-            <div class="choosen flex gap-[32px] container m-auto max-lg:flex-wrap max-sm:flex-col">
+            <div class="choosen flex gap-[32px] min-sm:container min-sm:m-auto  max-sm:flex-col ">
 
                 <div class="left-side flex flex-col gap-[16px] rounded-[12px] ">
                     <img src="../assets/imgs/costumizedimgs/oatlatte.png" alt="oat latte" class="rounded-[12px] ">  
@@ -57,10 +57,10 @@
                 </div>
                 
                 
-                <div class="right-side capitalize flex flex-col flex-wrap gap-[40px] p-[32px]  rounded-[16px] bg-[#FCF2E8] drop-shadow-lg drop-shadow-gray-300  ">
+                <div class="right-side capitalize flex flex-col flex-wrap gap-[40px]   min-sm:p-[32px]  rounded-[16px] max-sm:pl-[10px] bg-[#FCF2E8] drop-shadow-lg drop-shadow-gray-300  ">
                    
                     <div class="flex flex-col ">
-                        <div class="row gap-[30px] justify-between">
+                        <div class="row gap-[30px] max-mg:justify-between">
                         <h1 class="font-bold text-[32px] max-sm:text-[20px] ">Signature Oat Latte</h1>
                         <h1 class="text-red-600 text-[32px] max-sm:text-[20px]">$6.00</h1>
                        </div>
@@ -76,23 +76,23 @@
 
                     </div>
                     
-                    <div class="size flex flex-col gap-[8px] border-t-1 border-pink-200 pt-[10px] ">
+                    <div class="size flex flex-col gap-[8px] border-t-1 border-pink-200 pt-[10px]  ">
                         <h1 class="uppercase max-md:text-[20px] ">size select</h1>
                        
-                        <div class="sizes-choosen flex gap-[8px] ">
+                        <div class="sizes-choosen flex gap-[8px] max-sm:flex-wrap ">
                      
                         <div class="small size-choosen text-center">
-                            <img src="../assets/imgs/icons/small.svg" alt="small cup"> 
+                            <img src="../assets/imgs/icons/small.svg" alt="small cup" > 
                             <h2 class="text-center">small (boz)</h2>
                         </div>
 
                         <div class="medium size-choosen text-center">
-                            <img src="../assets/imgs/icons/medium.svg" alt="medium cup">
+                            <img src="../assets/imgs/icons/medium.svg" alt="medium cup" >
                             <h2 >medium (12oz)</h2>
                         </div>
 
                         <div class="large size-choosen text-center">
-                            <img src="../assets/imgs/icons/large.svg" alt="large cup">
+                            <img src="../assets/imgs/icons/large.svg" alt="large cup" >
                             <h2>large (16oz)</h2>
                          </div>
 
@@ -102,7 +102,7 @@
                     <div class="milk flex flex-col gap-[8px] ">
                         <h1 class="uppercase">milk choosen</h1>
                         
-                        <div class="milks-choosen  gap-[8px] row  ">
+                        <div class="milks-choosen  gap-[8px] row max-sm:flex-wrap ">
                            <h2 class="milk-choosen">oat milk</h2>
                             <h2 class="milk-choosen">almond</h2>
                             <h2 class="milk-choosen">whole milk</h2>
@@ -113,7 +113,7 @@
                     <div class="sugre flex flex-col gap-[8px]  ">
                         <h1 class="uppercase">sugar level</h1>
                         
-                        <div class="level flex gap-[93px]  border-t-7 w-fit  border-[#CDE3EE]  ">
+                        <div class="level flex  max-sm:gap-[80px] min-sm:gap-[91px]  border-t-7 w-1  border-[#CDE3EE] w-fit  ">
                             <h2 class="hover:text-orange-700 ">none</h2>
                             <h2 class="hover:text-orange-700">less</h2>
                             <h2 class="hover:text-orange-700 max-sm:hidden">standerd</h2>
@@ -138,16 +138,16 @@
 
                         <div class="caffeins flex flex-col gap-[8px] min-sm:hidden  ">
                             <h1 class="uppercase">caffeine</h1>
-                            <div class="extra-shots row gap-[60px] max-sm:gap-[10px] p-[8px] rounded-[12px] ">
+                            <div class="extra-shots row gap-[60px] max-sm:gap-[5px] rounded-[12px] ">
                               <a href="#" class="caffeine"> decaf</a>
                               <a href="#" class="caffeine" >regular</a>
                               <a href="#" class="caffeine"> extrashot</a>
 
                             </div>
                         </div>
-                        <div class="toppings flex flex-col gap-[8px] max-sm:hidden">
+                        <div class="toppings flex flex-col gap-[8px] max-sm:hidden ">
                             <lable for="topping">toppings</lable>
-                            <select name="topping" id="topping" class="bg-[#EBE1D7] p-[8px] rounded-[8px] hover:outline hover:outline-[#A93200] transition-all duration-500">   
+                            <select name="topping" id="topping" class="bg-[#EBE1D7]  p-[8px] rounded-[8px] hover:outline hover:outline-[#A93200] transition-all duration-500">   
                                 <option value="none">none</option>
                                 <option value="whipped cream">whipped cream</option>
                                 <option value="caramel">caramel</option>
@@ -155,7 +155,7 @@
                             </select>
                         </div>
 
-                        <div class="mtoppings flex flex-col  gap-[8px] min-sm:hidden">
+                        <div class="mtoppings flex flex-col gap-[8px] min-sm:hidden">
                             <h1 class="uppercase">toppings</h1>
                            
                             <div class="mtoppings flex flex-wrap gap-[8px] ">
@@ -186,14 +186,14 @@
                     </div>
                 </div>
 
-                <div class="total border-t-1 border-[#E5BEB2] flex flex-col gap-[16px] ">
+                <div class="total border-t-1 border-[#E5BEB2] flex flex-col gap-[16px] w-full pr-[10px]">
                     <div class="flex flex-col pt-[24px]">
                         <h2>estimated total</h2>
                       
-                        <div class=" justify-between row ">
+                        <div class=" justify-between row  ">
                             <h1 class="font-bold text-[32px]">$7.25</h1>
 
-                            <div class="number-of-cup row gap-[60px] border border-[#E5BEB2] p-[8px] rounded-[12px]  max-sm:gap-[10px]">
+                            <div class="number-of-cup row gap-[60px] border border-[#E5BEB2] p-[8px] rounded-[12px]  max-sm:gap-[5px]">
                                 <a href="#" class="  p-[8px] hover:bg-red-200 transition-all duration-500">  <h1>+</h1></a>
                                               <h1>1</h1>
                                 <a href="#" class="  p-[8px] hover:bg-red-200 transition-all duration-500">  <h1>-</h1></a>
@@ -202,7 +202,7 @@
  
                         </div>
                     </div>
-                    <button class="bg-[#D34000] text-white row justify-center p-[24px] rounded-[16px]  gap-2 ">
+                    <button class="bg-[#D34000] text-white row justify-center  py-[24px]  rounded-[16px]  gap-2 ">
                         <img src="../assets/imgs/icons/cartt.svg" alt="cart">
                         add to card</button>
                 </div>
